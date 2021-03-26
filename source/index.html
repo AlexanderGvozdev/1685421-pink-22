@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img\pink.svg" width="74" height="23" alt="Логотип Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item main-nav-list__item--active">
+              <a>
+                главная
+              </a>
+            </li>
+            <li class="main-nav-list__item">
+              <a href="#">
+                фотографии
+              </a>
+            </li>
+            <li class="main-nav-list__item">
+              <a href="#">
+                конкурс
+              </a>
+            </li>
+            <li class="main-nav-list__item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Пинк</h1>
+      <section class="download">
+        <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+        <a href="https://www.apple.com/ru/app-store/" class="download__button">Скачать приложение</a>
+        <ul class="logo-picture">
+          <li class="logo-picture__item"><img src="img\apple-logo.svg" width="47" height="56" alt="логотип Apple"></li>
+          <li class="logo-picture__item"><img src="img\android-logo.svg" width="43" height="47" alt="логотип Android"></li>
+          <li class="logo-picture__item"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></li>
+        </ul>
+        <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="description">
+        <h3 class="description__title">Устали от серости<br> мегаполиса?<br>Нам есть, что вам<br> предложить!</h3>
+        <b class="description__subtitle">поднимает настроение</b>
+        <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <b class="description__subtitle">Меняет мир вокруг</b>
+        <p class="description__features">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <b class="description__subtitle">Заводит новых друзей</b>
+        <p class="description__features">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="phone-image">
+          <img class="phone-image__item" src="img\iphone.png" width="157" height="320" alt="изображение айфона">
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">отзывы</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </blockquote>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="benefits">
+        <table class="benefits__list">
+          <tr class="benefits__item">
+            <th>Стандарт 3.99 USD</th>
+          </tr>
+          <tr class="benefits__item">
+            <td>розовый фильтр</td>
+          </tr>
+          <tr class="benefits__item">
+            <td>смайлики</td>
+          </tr>
+          <tr class="benefits__item">
+            <td>комментарии</td>
+          </tr>
+        </table>
+        <p class="benefits__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <h3 class="contacts__title">Остались вопросы?
+            Свяжитесь с нами!</h3>
+            <b class="contacts__subtitle">Звоните:</b>
+            <a class="contacts__phone" href="tel:+7 (812) 555-66-66">
+              <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
+            </a>
+            <b class="contacts__subtitle">пишите:</b>
+            <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <b class="contacts__subtitle">приезжайте в гости:</b>
+            <p class="contacts__adress">ул. Большая
+              Конюшенная, 19/8</p>
+        </div>
+        <div class="page-footer__map">
+          когда-то шото будет</div>
+        <div class="page-footer__social social">
+          <img src="img\footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
