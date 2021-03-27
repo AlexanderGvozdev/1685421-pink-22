@@ -6,29 +6,29 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="logo page-header__logo">
         <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav-list">
-            <li class="main-nav-list__item main-nav-list__item--active">
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
               <a>
                 главная
               </a>
             </li>
-            <li class="main-nav-list__item">
+            <li class="nav__item">
               <a href="#">
                 фотографии
               </a>
             </li>
-            <li class="main-nav-list__item">
+            <li class="nav__item">
               <a href="#">
                 конкурс
               </a>
             </li>
-            <li class="main-nav-list__item">
+            <li class="nav__item">
               <a href="#">
                 html academy
               </a>
@@ -42,15 +42,15 @@
       <section class="download">
         <h2 class="download__title">Взгляните на жизнь иначе!</h2>
         <a href="https://www.apple.com/ru/app-store/" class="download__button">Скачать приложение</a>
-        <ul class="logo-picture">
-          <li class="logo-picture__item"><img src="img/apple-logo.svg" width="47" height="56" alt="логотип Apple"></li>
-          <li class="logo-picture__item"><img src="img/android-logo.svg" width="43" height="47" alt="логотип Android"></li>
-          <li class="logo-picture__item"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></li>
+        <ul class="platforms">
+          <li class="platforms__brand"><img src="img/apple-logo.svg" width="47" height="56" alt="логотип Apple"></li>
+          <li class="platforms__brand"><img src="img/android-logo.svg" width="43" height="47" alt="логотип Android"></li>
+          <li class="platforms__brand"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></li>
         </ul>
         <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="description">
-        <h3 class="description__title">Устали от серости<br> мегаполиса?<br>Нам есть, что вам<br> предложить!</h3>
+        <h3 class="page-title description__title">Устали от серости<br> мегаполиса?<br>Нам есть, что вам<br> предложить!</h3>
         <b class="description__subtitle">поднимает настроение</b>
         <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         <b class="description__subtitle">Меняет мир вокруг</b>
@@ -61,9 +61,9 @@
           <img class="phone-image__item" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews slider">
         <h2 class="visually-hidden">отзывы</h2>
-        <div class="reviews__list slider__list">
+        <div class="reviews__list reviews__slider">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
@@ -78,7 +78,7 @@
         </div>
       </section>
       <section class="benefits">
-        <table class="benefits__list">
+        <table class="benefits__list benefits__slider">
           <tr class="benefits__item">
             <th>Стандарт 3.99 USD</th>
           </tr>
@@ -93,16 +93,16 @@
           </tr>
         </table>
         <p class="benefits__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <h3 class="contacts__title">Остались вопросы?
+          <h3 class="page-title contacts__title">Остались вопросы?
             Свяжитесь с нами!</h3>
             <b class="contacts__subtitle">Звоните:</b>
             <a class="contacts__phone" href="tel:+7(812)555-66-66">
@@ -117,7 +117,7 @@
         <div class="page-footer__map">
           когда-то шото будет</div>
         <div class="page-footer__social social">
-          <img src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+          <img class="logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -136,5 +136,6 @@
         </div>
         </div>
     </footer>
+
   </body>
 </html>
