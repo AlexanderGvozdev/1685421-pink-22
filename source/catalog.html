@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк: фотографии</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="logo page-header__logo">
+        <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wrapper">
+          <ul class="nav-list">
+            <li class="nav__item">
+              <a href="#">
+                главная
+              </a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <a>
+                фотографии
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#">
+                конкурс
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="catalog-main">
+      <div class="description">
+        <h3 class="description__title">Фотографии пользователей</h3>
+      </div>
+      <section class="page-section photo-section">
+        <div class="page-section__wrapper">
+          <h3 class="page-section__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+          <div class="user-photo">
+            <img src="img/panorama.jpg" width="320" height="137" alt="панорама">
+            <p class="user-photo__author">Анна<span class="time">(5 минут назад)</span></p>
+            <p class="user-photo__author-desc">Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <button class="user-photo__like">Нравится: 215</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+          <div class="user-photo">
+            <img src="img/photo-1.jpg" width="280" height="180" alt="фотография">
+            <p class="user-photo__author">Левон<span class="time">(5 часов назад)</span></p>
+            <p class="user-photo__author-desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="user-photo__like">Нравится: 356</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+          <div class="user-photo">
+            <img src="img/photo-2.jpg" width="280" height="180" alt="фотография">
+            <p class="user-photo__author">Антон<span class="time">(12 часов назад)</span></p>
+            <p class="user-photo__author-desc">Соседи будут рады!</p>
+            <button class="user-photo__like">Нравится: 666</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+          <div class="user-photo">
+            <img src="img/photo-3.jpg" width="280" height="180" alt="фотография">
+            <p class="user-photo__author">Борис<span class="time">(20 часов назад)</span></p>
+            <p class="user-photo__author-desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="user-photo__like">Нравится: 215</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+          <div class="user-photo">
+            <img src="img/photo-4.jpg" width="280" height="180" alt="фотография">
+            <p class="user-photo__author">Сергей<span class="time">(25 часов назад)</span></p>
+            <p class="user-photo__author-desc">Самая кубанская в мире!</p>
+            <button class="user-photo__like">Нравится: 4</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+          <div class="user-photo">
+            <img src="img/photo-5.jpg" width="280" height="180" alt="фотография">
+            <p class="user-photo__author">Максим<span class="time">(40 часов назад)</span></p>
+            <p class="user-photo__author-desc">Где снег-то?</p>
+            <button class="user-photo__like">Нравится: 150</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+          <div class="user-photo">
+            <img src="img/photo-6.jpg" width="280" height="180" alt="фотография">
+            <p class="user-photo__author">Надежда<span class="time">(45 часов назад)</span></p>
+            <p class="user-photo__author-desc">Всем GM и взаимные лайки!</p>
+            <button class="user-photo__like">Нравится: 2560</button>
+            <button class="user-photo__button-like">лайк</button>
+          </div>
+        </div>
+        <form class="photo-editor" action="https://echo.htmlacademy.ru" method="post">
+          <h3 class="photo-editor__title">Затмите их всех!
+            Выкладывайте все, что накопилось в телефоне!</h3>
+          <input class="photo-editor__item" type="file" name="photo">
+          <input class="photo-editor__item" type="range">
+          <input class="photo-editor__item" type="range">
+          <input class="photo-editor__item" type="range">
+          <button class="photo-editor__submit-button">Запостить</button>
+          <button class="photo-editor__reset-button">Отмена</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <img class="logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>
