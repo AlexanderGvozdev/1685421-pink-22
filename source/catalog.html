@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: фотографии</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -47,7 +48,7 @@
           <h3 class="page-section__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
           <div class="user-photo">
             <img class="user-photo__panorama" src="img/panorama.jpg" width="320" height="137" alt="панорама">
-            <p class="user-photo__author">Анна<span class="time">(5 минут назад)</span></p>
+            <p class="user-photo__author">Анна<span class="user-photo__time">(5 минут назад)</span></p>
             <p class="user-photo__author-desc">Прыгать или нет? Напишите в
               комментарии свой совет и
               смотрите прямую трансляцию в
@@ -57,42 +58,42 @@
           </div>
           <div class="user-photo">
             <img src="img/photo-1.jpg" width="280" height="180" alt="фотография">
-            <p class="user-photo__author">Левон<span class="time">(5 часов назад)</span></p>
+            <p class="user-photo__author">Левон<span class="user-photo__time">(5 часов назад)</span></p>
             <p class="user-photo__author-desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="user-photo__like">Нравится: 356</p>
             <button class="user-photo__button-like">лайк</button>
           </div>
           <div class="user-photo">
             <img src="img/photo-2.jpg" width="280" height="180" alt="фотография">
-            <p class="user-photo__author">Антон<span class="time">(12 часов назад)</span></p>
+            <p class="user-photo__author">Антон<span class="user-photo__time">(12 часов назад)</span></p>
             <p class="user-photo__author-desc">Соседи будут рады!</p>
             <p class="user-photo__like">Нравится: 666</p>
             <button class="user-photo__button-like">лайк</button>
           </div>
           <div class="user-photo">
             <img src="img/photo-3.jpg" width="280" height="180" alt="фотография">
-            <p class="user-photo__author">Борис<span class="time">(20 часов назад)</span></p>
+            <p class="user-photo__author">Борис<span class="user-photo__time">(20 часов назад)</span></p>
             <p class="user-photo__author-desc">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="user-photo__like">Нравится: 215</p>
             <button class="user-photo__button-like">лайк</button>
           </div>
           <div class="user-photo">
             <img src="img/photo-4.jpg" width="280" height="180" alt="фотография">
-            <p class="user-photo__author">Сергей<span class="time">(25 часов назад)</span></p>
+            <p class="user-photo__author">Сергей<span class="user-photo__time">(25 часов назад)</span></p>
             <p class="user-photo__author-desc">Самая кубанская в мире!</p>
             <p class="user-photo__like">Нравится: 4</p>
             <button class="user-photo__button-like">лайк</button>
           </div>
           <div class="user-photo">
             <img src="img/photo-5.jpg" width="280" height="180" alt="фотография">
-            <p class="user-photo__author">Максим<span class="time">(40 часов назад)</span></p>
+            <p class="user-photo__author">Максим<span class="user-photo__time">(40 часов назад)</span></p>
             <p class="user-photo__author-desc">Где снег-то?</p>
             <p class="user-photo__like">Нравится: 150</p>
             <button class="user-photo__button-like">лайк</button>
           </div>
           <div class="user-photo">
             <img src="img/photo-6.jpg" width="280" height="180" alt="фотография">
-            <p class="user-photo__author">Надежда<span class="time">(45 часов назад)</span></p>
+            <p class="user-photo__author">Надежда<span class="user-photo__time">(45 часов назад)</span></p>
             <p class="user-photo__author-desc">Всем GM и взаимные лайки!</p>
             <p class="user-photo__like">Нравится: 2560</p>
             <button class="user-photo__button-like">лайк</button>
@@ -112,24 +113,26 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <img class="logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
-        <ul class="social__list list-reset">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">ВК</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">ФБ</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">ИН</a>
-          </li>
-        </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <div class="page-footer__social-wrapper">
+          <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+          <div class="page-footer__social social">
+            <ul class="social__list list-reset">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">ВК</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">ФБ</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">ИН</a>
+              </li>
+            </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <p class="copyright__text">Разработано:</p>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </div>
+            </div>
         </div>
     </footer>
   </body>
