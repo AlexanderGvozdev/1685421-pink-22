@@ -12,7 +12,7 @@
   border: 2px solid #E5E5E5;
 }
 .benefits__item th {
-  background: #283645;
+  background-color: #283645;
   color: white;
   font-size: 16px;
   line-height: 30px;
@@ -28,5 +28,20 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-
+}
+.benefits-desktop {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+.benefits__slider {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.benefits__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
