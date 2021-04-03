@@ -1,3 +1,20 @@
+.form__wrapper {
+  @media (min-width: @desktop-width) {
+
+  }
+}
+.fieldset-2,
+.fieldset-3,
+.fieldset-5 {
+  @media (min-width: @desktop-width) {
+
+  }
+}
+.fieldset-4 {
+  @media (min-width: @desktop-width) {
+
+  }
+}
 .form__field {
   font-family: inherit;
   border: 2px solid #E5E5E5;
@@ -13,6 +30,17 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+}
+.form__label-bottom {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+.form__label-top {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 .form__item input,
 .form__input-item label,
@@ -43,4 +71,30 @@
 }
 .form__submit-button {
   font-family: inherit;
+}
+.fieldset-2,
+.fieldset-3,
+.fieldset-4,
+.fieldset-5 {
+  @media (min-width: @tablet-width) {
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    background-color: initial;
+  }
+}
+.desktop-legend {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+.fieldset-3 {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
