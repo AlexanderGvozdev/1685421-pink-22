@@ -1,7 +1,38 @@
 .form__wrapper {
-  @media (min-width: @desktop-width) {
-
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "fieldset-1"
+      "fieldset-4"
+      "fieldset-3"
+      "fieldset-2"
+      "fieldset-5";
   }
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "fieldset-1 fieldset-4"
+      "fieldset-3 fieldset-3"
+      "fieldset-2 fieldset-2"
+      "fieldset-5 fieldset-5";
+  }
+}
+.fieldset-1 {
+  grid-area: fieldset-1;
+}
+.fieldset-2 {
+  grid-area: fieldset-2;
+}
+.fieldset-3 {
+  grid-area: fieldset-3;
+}
+.fieldset-4 {
+  grid-area: fieldset-4;
+}
+.fieldset-5 {
+  grid-area: fieldset-5;
 }
 .fieldset-2,
 .fieldset-3,
@@ -96,5 +127,10 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+.fieldset-5 label  {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
