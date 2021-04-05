@@ -18,3 +18,41 @@
   line-height: 24px;
   font-weight: 400;
 }
+.description__phone-image-1,
+.description__phone-image-2 {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+.description__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+  }
+}
+.description__list {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.description__phone-image {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.description__phone-image-1,
+.description__phone-image-2,
+.description__phone-image-3 {
+  @media (min-width: @desktop-width) {
+    margin-right: 50px;
+  }
+}

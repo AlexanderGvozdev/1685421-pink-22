@@ -25,3 +25,22 @@
   line-height: 18px;
   font-weight: 400;
 }
+.page-footer__social-wrapper {
+  @media (min-width: @tablet-width) {
+   min-height: 127px;
+   display: flex;
+   justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    min-height: 197px;
+  }
+}
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+

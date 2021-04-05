@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -44,24 +45,47 @@
         <h2 class="download__title">Взгляните на жизнь иначе!</h2>
         <div class="download__color">
           <a href="https://www.apple.com/ru/app-store/" class="download__button">Скачать приложение</a>
-            <ul class="platforms list-reset">
-              <li class="platforms__brand"><a href="#"><img src="img/apple-logo.svg" width="47" height="56" alt="логотип Apple"></a></li>
-              <li class="platforms__brand"><a href="#"><img src="img/android-logo.svg" width="43" height="47" alt="логотип Android"></a></li>
-              <li class="platforms__brand"><a href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></a></li>
-            </ul>
-        <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <ul class="platforms list-reset">
+            <li class="platforms__brand"><a href="#"><img src="img/apple-logo.svg" width="47" height="56" alt="логотип Apple"></a></li>
+            <li class="platforms__brand"><a href="#"><img src="img/android-logo.svg" width="43" height="47" alt="логотип Android"></a></li>
+            <li class="platforms__brand"><a href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></a></li>
+          </ul>
+          <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="description">
-        <h3 class="page-title description__title">Устали от серости<br> мегаполиса?<br>Нам есть, что вам<br> предложить!</h3>
-        <b class="description__subtitle">поднимает настроение</b>
-        <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <b class="description__subtitle">Меняет мир вокруг</b>
-        <p class="description__features">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <b class="description__subtitle">Заводит новых друзей</b>
-        <p class="description__features">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        <div class="phone-image">
-          <img class="phone-image__item" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
+        <h3 class="page-title description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h3>
+        <div class="description__wrapper">
+          <div class="description__list">
+            <div class="description__item">
+              <b class="description__subtitle">поднимает настроение</b>
+              <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="description__item">
+              <b class="description__subtitle">Меняет мир вокруг</b>
+              <p class="description__features">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="description__item">
+              <b class="description__subtitle">Заводит новых друзей</b>
+              <p class="description__features">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
+          <div class="description__phone-image">
+            <img class="description__phone-image-1" src="img/iphone-3.png" width="157" height="320" alt="изображение айфона">
+            <img class="description__phone-image-2" src="img/iphone-2.png" width="157" height="320" alt="изображение айфона">
+            <img class="description__phone-image-3" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
+          </div>
+        </div>
+      </section>
+      <section class="app-use">
+        <img src="img/clock.svg" width="238" height="276" alt="изображение часов">
+        <div class="app-use__list">
+          <b class="app-use__title">Эффект
+            на 24 часа!</b>
+          <p class="app-use__item">Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится целые сутки!</p>
+          <a class="app-use__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews slider">
@@ -69,8 +93,10 @@
         <div class="reviews__list reviews__slider">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <cite class="reviews__author-name-top">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <cite class="reviews__author-name-bottom">Николай Петров</cite>
+              <span class="reviews__about-author">25 лет, водитель трамвая</span>
             </div>
           </blockquote>
           <p class="reviews__toggles slider__toggles">
@@ -81,48 +107,54 @@
         </div>
       </section>
       <section class="benefits">
-        <table class="benefits__list benefits__slider">
-          <tr class="benefits__item">
-            <th>База<br><span>1.99 USD</span></th>
-          </tr>
-          <tr class="benefits__item">
-            <td>розовый фильтр</td>
-          </tr>
-          <tr class="benefits__item">
-            <td>смайлики</td>
-          </tr>
-          <tr class="benefits__item">
-            <td>комментарии</td>
-          </tr>
-        </table>
-        <table class="benefits__list benefits__slider">
-          <tr class="benefits__item">
-            <th>Стандарт<br><span>3.99 USD</span></th>
-          </tr>
-          <tr class="benefits__item">
-            <td>розовый фильтр</td>
-          </tr>
-          <tr class="benefits__item">
-            <td>смайлики</td>
-          </tr>
-          <tr class="benefits__item">
-            <td>комментарии</td>
-          </tr>
-        </table>
-        <table class="benefits__list benefits__slider">
-          <tr class="benefits__item">
-            <th>Анлим<br><span>9.99 USD</span></th>
-          </tr>
-          <tr class="benefits__item">
-            <td>розовый фильтр</td>
-          </tr>
-          <tr class="benefits__item">
-            <td>смайлики</td>
-          </tr>
-          <tr class="benefits__item">
-            <td>комментарии</td>
-          </tr>
-        </table>
+        <div class="benefits__wrapper">
+          <ul class="benefits__list list-reset">
+            <li class="benefits__item--title">база<br><span>1.99 USD</span></li>
+            <li class="benefits__item">розовый фильтр</li>
+            <li class="benefits__item">смайлики</li>
+            <li class="benefits__item">комментарии</li>
+          </ul>
+          <ul class="benefits__list list-reset">
+            <li class="benefits__item--title">стандарт<br><span>3.99 USD</span></li>
+            <li class="benefits__item">розовый фильтр</li>
+            <li class="benefits__item">смайлики</li>
+            <li class="benefits__item">комментарии</li>
+          </ul>
+          <ul class="benefits__list list-reset">
+            <li class="benefits__item--title">анлим<br><span>9.99 USD</span></li>
+            <li class="benefits__item">розовый фильтр</li>
+            <li class="benefits__item">смайлики</li>
+            <li class="benefits__item">комментарии</li>
+          </ul>
+        </div>
+        <div class="benefits__desktop">
+          <div class="benefits__desktop-wrapper">
+            <ul class="benefits__desktop-list list-reset">
+              <li class="benefits__desktop-item--title benefits__title--hidden"><br><span></span></li>
+              <li class="benefits__desktop-item">розовый фильтр</li>
+              <li class="benefits__desktop-item">смайлики</li>
+              <li class="benefits__desktop-item">комментарии</li>
+            </ul>
+            <ul class="benefits__desktop-list list-reset">
+              <li class="benefits__desktop-item--title">база<br><span>1.99 USD</span></li>
+              <li class="benefits__desktop-item">в</li>
+              <li class="benefits__desktop-item">в</li>
+              <li class="benefits__desktop-item">в</li>
+            </ul>
+            <ul class="benefits__desktop-list list-reset">
+              <li class="benefits__desktop-item--title">стандарт<br><span>3.99 USD</span></li>
+              <li class="benefits__desktop-item">в</li>
+              <li class="benefits__desktop-item">в</li>
+              <li class="benefits__desktop-item">в</li>
+            </ul>
+            <ul class="benefits__desktop-list list-reset">
+              <li class="benefits__desktop-item--title">анлим<br><span>9.99 USD</span></li>
+              <li class="benefits__desktop-item">в</li>
+              <li class="benefits__desktop-item">в</li>
+              <li class="benefits__desktop-item">в</li>
+            </ul>
+          </div>
+        </div>
         <p class="benefits__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
@@ -135,37 +167,45 @@
         <div class="page-footer__contacts contacts">
           <h3 class="page-title contacts__title">Остались вопросы?
             Свяжитесь с нами!</h3>
+          <div class="contacts__item">
             <b class="contacts__subtitle">Звоните:</b>
             <a class="contacts__phone" href="tel:+7(812)555-66-66">
               <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
             </a>
+          </div>
+          <div class="contacts__item">
             <b class="contacts__subtitle">пишите:</b>
             <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
             <b class="contacts__subtitle">приезжайте в гости:</b>
             <p class="contacts__adress">ул. Большая
               Конюшенная, 19/8</p>
+          </div>
         </div>
         <div class="page-footer__map">
           <img src="img/map.png" width="320" height="200" alt="карта">
         </div>
-        <div class="page-footer__social social">
-        <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
-        <ul class="social__list list-reset">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">ВК</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">ФБ</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">ИН</a>
-          </li>
-        </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <div class="page-footer__social-wrapper">
+          <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+          <div class="page-footer__social social">
+            <ul class="social__list list-reset">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">ВК</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">ФБ</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">ИН</a>
+              </li>
+            </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <p class="copyright__text">Разработано:</p>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </div>
+            </div>
         </div>
     </footer>
   </body>
