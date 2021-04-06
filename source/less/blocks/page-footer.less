@@ -5,6 +5,9 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 .contacts__subtitle {
   font-size: 18px;
@@ -41,6 +44,10 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
-
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+}
