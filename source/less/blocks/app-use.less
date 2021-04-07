@@ -1,11 +1,13 @@
 .app-use {
+  @media (min-width: @desktop-width) {
+    background-color: #F2F2F2;
+  }
+}
+.app-use__container {
   display: none;
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
-  }
-  @media (min-width: @desktop-width) {
-    background-color: #F2F2F2;
   }
 }
 .app-use__title {

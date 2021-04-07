@@ -1,9 +1,13 @@
 .photo-editor {
   background-color: #F2F2F2;
+  @media (min-width: @desktop-width) {
+    background-color: initial;
+  }
+}
+.photo-editor__container {
+  background-color: #F2F2F2;
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: -20px;
-  margin-right: -20px;
 }
 .photo-editor__title {
   line-height: 30px;
