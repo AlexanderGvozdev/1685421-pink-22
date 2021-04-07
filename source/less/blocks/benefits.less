@@ -1,6 +1,7 @@
 .benefits {
   background-color: #F2F2F2;
 }
+
 .benefits__toggles {
   @media (min-width: @tablet-width) {
     display: none;
@@ -14,6 +15,7 @@
 .benefits-table__cell {
   min-width: 280px;
   line-height: 30px;
+
   border: 2px solid #E5E5E5;
   border-radius: 2px;
   text-transform: uppercase;
@@ -24,6 +26,7 @@
     min-width: 233px;
   }
 }
+
 .benefits-table__title {
   padding: 16px 13px 20px 13px;
   color: white;
@@ -51,8 +54,12 @@
 }
 .benefits-table__cell {
   padding: 14px 13px 14px 23px;
+
+
+
   font-size: 14px;
   font-weight: 400;
+
   color: var(--basic-extra-dark);
   background-color: var(--basic-white);
   @media (min-width: @tablet-width) {
@@ -64,6 +71,11 @@
     font-size: 18px;
   }
   &--hidden {
+
+}
+.benefits__toggles {
+  @media (min-width: @tablet-width) {
+
     display: none;
     @media (min-width: @tablet-width) {
       display: table-cell;
@@ -95,6 +107,7 @@
     background-image: url("../img/no.svg");
   }
 }
+
 .benefits-table__tariff {
   font-weight: 700;
   font-size: 16px;
@@ -125,8 +138,11 @@
   line-height: 30px;
 }
 .benefits-table__hidden {
+
+
+
   @media (min-width: @tablet-width) {
-    display: none;
+    display: block;
   }
 }
 
