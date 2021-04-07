@@ -7,78 +7,87 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="container">
-      <header class="page-header">
-        <a class="logo page-header__logo">
-          <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
-        </a>
-        <nav class="nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="nav__wrapper">
-            <ul class="nav__list list-reset">
-              <li class="nav__item nav__item--active">
-                <a>
-                  главная
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="catalog.html">
-                  фотографии
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="form.html">
-                  конкурс
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#">
-                  html academy
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-    <main class="page-main">
+    <header class="page-header">
       <div class="container">
-        <h1 class="visually-hidden">Пинк</h1>
-      <section class="download">
-        <div class="download__wrapper">
-          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-          <div class="download__color">
-            <a href="https://www.apple.com/ru/app-store/" class="download__button">Скачать приложение</a>
-            <ul class="platforms list-reset">
-              <li class="platforms__brand"><a href="#"><img src="img/apple-logo.svg" width="47" height="56" alt="логотип Apple"></a></li>
-              <li class="platforms__brand"><a href="#"><img src="img/android-logo.svg" width="43" height="47" alt="логотип Android"></a></li>
-              <li class="platforms__brand"><a href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></a></li>
-            </ul>
-          <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="page-header__container">
+          <a class="logo page-header__logo">
+            <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+          </a>
+          <nav class="nav">
+            <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="nav__wrapper">
+              <ul class="nav__list list-reset">
+                <li class="nav__item nav__item--active">
+                  <a>
+                    главная
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="catalog.html">
+                    фотографии
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="form.html">
+                    конкурс
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">
+                    html academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Пинк</h1>
+      <section class="download">
+        <div class="container">
+          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+        </div>
+        <div class="download__container">
+          <div class="container">
+            <div class="download__wrapper">
+              <a href="https://www.apple.com/ru/app-store/" class="download__button">Скачать приложение</a>
+              <ul class="platforms list-reset">
+                <li class="platforms__brand"><a href="#"><img src="img/apple-logo.svg" width="47" height="56" alt="логотип Apple"></a></li>
+                <li class="platforms__brand"><a href="#"><img src="img/android-logo.svg" width="43" height="47" alt="логотип Android"></a></li>
+                <li class="platforms__brand"><a href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></a></li>
+              </ul>
+            <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="description">
-        <h3 class="page-title description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h3>
-        <div class="description__wrapper">
-          <div class="description__list">
-            <div class="description__item">
-              <b class="description__subtitle">поднимает настроение</b>
-              <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <div class="description__container">
+          <div class="container">
+            <h3 class="page-title description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h3>
+            <div class="description__wrapper">
+              <div class="description__list">
+                <div class="description__item">
+                  <b class="description__subtitle">поднимает настроение</b>
+                  <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </div>
+                <div class="description__item">
+                  <b class="description__subtitle">Меняет мир вокруг</b>
+                  <p class="description__features">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </div>
+                <div class="description__item">
+                  <b class="description__subtitle">Заводит новых друзей</b>
+                  <p class="description__features">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </div>
+              </div>
+              <div class="description__phone-image">
+                <img class="description__phone-image-1" src="img/iphone-3.png" width="157" height="320" alt="изображение айфона">
+                <img class="description__phone-image-2" src="img/iphone-2.png" width="157" height="320" alt="изображение айфона">
+                <img class="description__phone-image-3" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
+              </div>
             </div>
-            <div class="description__item">
-              <b class="description__subtitle">Меняет мир вокруг</b>
-              <p class="description__features">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </div>
-            <div class="description__item">
-              <b class="description__subtitle">Заводит новых друзей</b>
-              <p class="description__features">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </div>
-          </div>
-          <div class="description__phone-image">
-            <img class="description__phone-image-1" src="img/iphone-3.png" width="157" height="320" alt="изображение айфона">
-            <img class="description__phone-image-2" src="img/iphone-2.png" width="157" height="320" alt="изображение айфона">
-            <img class="description__phone-image-3" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
           </div>
         </div>
       </section>
@@ -184,7 +193,6 @@
           <button class="slider__toggle" type="button">3</button>
         </p>
       </section>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="container">

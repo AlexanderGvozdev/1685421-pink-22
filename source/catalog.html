@@ -7,41 +7,47 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">
-        <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="nav__wrapper">
-          <ul class="nav__list list-reset">
-            <li class="nav__item">
-              <a href="index.html">
-                главная
-              </a>
-            </li>
-            <li class="nav__item nav__item--active">
-              <a>
-                фотографии
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="form.html">
-                конкурс
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#">
-                html academy
-              </a>
-            </li>
-          </ul>
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__container">
+            <a class="logo page-header__logo" href="index.html">
+              <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+            </a>
+            <nav class="nav">
+              <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+              <div class="nav__wrapper">
+                <ul class="nav__list list-reset">
+                  <li class="nav__item">
+                    <a href="index.html">
+                      главная
+                    </a>
+                  </li>
+                  <li class="nav__item nav__item--active">
+                    <a>
+                      фотографии
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="form.html">
+                      конкурс
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#">
+                      html academy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      </nav>
-    </header>
+      </header>
     <main class="catalog-main">
       <div class="description-section">
-        <h3 class="description-section__title">Фотографии пользователей</h3>
+        <div class="container">
+          <h3 class="description-section__title">Фотографии пользователей</h3>
+        </div>
       </div>
       <section class="page-section photo-section">
         <div class="page-section__wrapper">
@@ -113,7 +119,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <div class="page-footer__social-wrapper">
           <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">

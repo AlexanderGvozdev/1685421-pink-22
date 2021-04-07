@@ -2,20 +2,20 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 .user-photo,
 .user-photo-panorama {
   background-color: #F2F2F2;
 }
 .user-photo-panorama img {
-  width: 100%;
-
+  margin-left: -20px;
+  margin-right: -20px;
 }
 .user-photo {
   width: 280px;

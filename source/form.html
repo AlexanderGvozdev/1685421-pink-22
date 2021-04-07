@@ -7,44 +7,47 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="container">
-      <header class="page-header">
-        <a class="logo page-header__logo" href="index.html">
-          <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
-        </a>
-        <nav class="nav">
-          <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="nav__wrapper">
-            <ul class="nav__list list-reset">
-              <li class="nav__item">
-                <a href="index.html">
-                  главная
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="catalog.html">
-                  фотографии
-                </a>
-              </li>
-              <li class="nav__item nav__item--active">
-                <a>
-                  конкурс
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#">
-                  html academy
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-    <main class="form-main">
+    <header class="page-header">
       <div class="container">
+        <div class="page-header__container">
+          <a class="logo page-header__logo" href="index.html">
+            <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+          </a>
+          <nav class="nav">
+            <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="nav__wrapper">
+              <ul class="nav__list list-reset">
+                <li class="nav__item">
+                  <a href="index.html">
+                    главная
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="catalog.html">
+                    фотографии
+                  </a>
+                </li>
+                <li class="nav__item nav__item--active">
+                  <a>
+                    конкурс
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">
+                    html academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="form-main">
         <div class="description-section">
-          <h3 class="description-section__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
+          <div class="container">
+            <h3 class="description-section__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
+          </div>
         </div>
         <section class="page-section form-section">
           <h3 class="page-section__title">Поделитесь своей историей и получите
@@ -53,21 +56,21 @@
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__wrapper">
               <fieldset class="form__fieldset form__fieldset-1">
-                <p class="form__item">
-                  <label for="surname-field">фамилия</label>
-                  <input required class="form__field" id="surname-field" name="surname" placeholder="Укажите фамилию *">
-                </p>
-                <p class="form__item">
-                  <label for="name-field">имя</label>
-                  <input required class="form__field" id="name-field" name="name" placeholder="Введите ваше имя *">
-                </p>
-                <p class="form__item">
-                  <label for="middlename-field">отчество</label>
-                  <input class="form__field" id="middlename-field" name="name" placeholder="Ну и отчество тоже">
-                </p>
+                  <p class="form__item">
+                    <label for="surname-field">фамилия</label>
+                    <input required class="form__field" id="surname-field" name="surname" placeholder="Укажите фамилию *">
+                  </p>
+                  <p class="form__item">
+                    <label for="name-field">имя</label>
+                    <input required class="form__field" id="name-field" name="name" placeholder="Введите ваше имя *">
+                  </p>
+                  <p class="form__item">
+                    <label for="middlename-field">отчество</label>
+                    <input class="form__field" id="middlename-field" name="name" placeholder="Ну и отчество тоже">
+                  </p>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset-gray form__fieldset-2">
-                <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+                  <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="form__input-list">
                   <li class="form__input-item">
                     <input class="form__input form__input--checkbox" type="checkbox" name="achievements" id="achievement-1" checked>
@@ -96,20 +99,18 @@
                 </ul>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset-3">
-                <legend class="form__legend form__legend-desktop">контактная информация</legend>
+                  <legend class="form__legend form__legend-desktop">контактная информация</legend>
                 <p class="form__item form__item-desktop">
                   <label for="phone" class="form__label">номер телефона</label>
                   <input required class="form__field" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-
                 </p>
                 <p class="form__item form__item-desktop">
                   <label for="email" class="form__label">адрес почты</label>
                   <input required class="form__field" id="email" type="email" name="mail" placeholder="Введите почту *">
-
                 </p>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset-gray form__fieldset-4">
-                <legend class="form__legend">С каким приложением путешествовали?</legend>
+                  <legend class="form__legend">С каким приложением путешествовали?</legend>
                 <ul class="form__radio-list">
                   <li class="form__radio-item">
                     <input class="form__input form__input--radio" type="radio" name="app" id="iOS" checked>
@@ -126,7 +127,7 @@
                 </ul>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset-5">
-                <legend class="form__legend form__legend-desktop">опишите свои эмоции</legend>
+                  <legend class="form__legend form__legend-desktop">опишите свои эмоции</legend>
                 <p class="form__item">
                   <label for="form__label--label-letter">опишите свои эмоции</label>
                   <textarea class="letter-area" id="form__label--label-letter" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -139,7 +140,6 @@
             </p>
           </form>
         </section>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
