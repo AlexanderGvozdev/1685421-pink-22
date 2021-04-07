@@ -8,6 +8,9 @@
   font-weight: 300;
   background-color: white;
 }
+.description__item {
+  width: 300px;
+}
 .description__subtitle {
   font-size: 18px;
   line-height: 24px;
@@ -25,13 +28,17 @@
     display: block;
   }
 }
+.description__phone-image-3 {
+  margin-right: 0;
+}
 .description__wrapper {
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
   }
   @media (min-width: @desktop-width) {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
 }
 .description__list {
@@ -45,14 +52,12 @@
 }
 .description__phone-image {
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 148px;
+    margin-left: 74px;
   }
+
 }
-.description__phone-image-1,
-.description__phone-image-2,
-.description__phone-image-3 {
-  @media (min-width: @desktop-width) {
-    margin-right: 50px;
-  }
-}
+
