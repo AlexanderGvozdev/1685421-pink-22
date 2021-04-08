@@ -23,32 +23,20 @@
       "fieldset-5 fieldset-5";
   }
 }
-.fieldset-1 {
+.form__fieldset-1 {
   grid-area: fieldset-1;
 }
-.fieldset-2 {
+.form__fieldset-2 {
   grid-area: fieldset-2;
 }
-.fieldset-3 {
+.form__fieldset-3 {
   grid-area: fieldset-3;
 }
-.fieldset-4 {
+.form__fieldset-4 {
   grid-area: fieldset-4;
 }
-.fieldset-5 {
+.form__fieldset-5 {
   grid-area: fieldset-5;
-}
-.fieldset-2,
-.fieldset-3,
-.fieldset-5 {
-  @media (min-width: @desktop-width) {
-
-  }
-}
-.fieldset-4 {
-  @media (min-width: @desktop-width) {
-
-  }
 }
 .form__field {
   font-family: inherit;
@@ -66,23 +54,18 @@
   line-height: 30px;
   font-weight: 400;
 }
-.form__label-bottom {
-  display: none;
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-}
-.form__label-top {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
 .form__item input,
 .form__input-item label,
 .form__radio-item label {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
+}
+.form__item-desktop {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .form__fieldset-gray {
   background-color: #F2F2F2;
@@ -107,23 +90,23 @@
 .form__submit-button {
   font-family: inherit;
 }
-.fieldset-2,
-.fieldset-3,
-.fieldset-4,
-.fieldset-5 {
+.form__fieldset-2,
+.form__fieldset-3,
+.form__fieldset-4,
+.form__fieldset-5 {
   @media (min-width: @tablet-width) {
     border: 2px solid #E5E5E5;
     border-radius: 1px;
     background-color: initial;
   }
 }
-.desktop-legend {
+.form__legend-desktop {
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
   }
 }
-.fieldset-3 {
+.form__fieldset-3 {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
@@ -133,7 +116,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.fieldset-5 label  {
+.form__fieldset-5 label  {
   @media (min-width: @tablet-width) {
     display: none;
   }
