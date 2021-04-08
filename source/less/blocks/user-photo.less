@@ -1,12 +1,13 @@
 .photo-section__wrapper {
+  display: grid;
+  grid-template-columns: 280px;
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 300px);
     gap: 20px;
   }
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
   }
 }
 .user-photo,
@@ -16,12 +17,6 @@
 .user-photo-panorama img {
   margin-left: -20px;
   margin-right: -20px;
-}
-.user-photo {
-  width: 280px;
-  @media (min-width: @tablet-width) {
-    width: 300px;
-  }
 }
 .user-photo__author,
 .user-photo-panorama__author {
