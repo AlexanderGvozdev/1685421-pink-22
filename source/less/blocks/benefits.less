@@ -2,6 +2,8 @@
   background-color: #F2F2F2;
 }
 
+
+
 .benefits-table {
   border-collapse: collapse;
   border-spacing: 2px;
@@ -11,6 +13,7 @@
 .benefits-table__cell {
   min-width: 280px;
   line-height: 30px;
+
   border: 2px solid #E5E5E5;
   border-radius: 2px;
   text-transform: uppercase;
@@ -57,9 +60,14 @@
 
 .benefits-table__cell {
   padding: 14px 13px 14px 23px;
+
+
+
   font-size: 14px;
   font-weight: 400;
+
   background-color: white;
+
 
   @media (min-width: @tablet-width) {
     padding: 7px 15px 8px 15px;
@@ -72,6 +80,11 @@
   }
 
   &--hidden {
+
+}
+.benefits__toggles {
+  @media (min-width: @tablet-width) {
+
     display: none;
 
     @media (min-width: @tablet-width) {
@@ -145,11 +158,13 @@
 }
 
 .benefits-table__hidden {
+
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+
   @media (min-width: @tablet-width) {
-    display: none;
+    display: block;
   }
 }
 
