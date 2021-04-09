@@ -7,6 +7,14 @@
   line-height: 29px;
   font-weight: 300;
   background-color: white;
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 .description__item {
   width: 300px;
@@ -15,11 +23,19 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 .description__features {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 .description__phone-image-1,
 .description__phone-image-2 {
