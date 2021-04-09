@@ -55,6 +55,14 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  @media (min-width: @desktop-width) {
+    div:nth-child(3) {
+      order: 0;
+    }
+    div:nth-child(2) {
+      order: 1;
+    }
+  }
 }
 .page-footer__copyright {
   display: flex;

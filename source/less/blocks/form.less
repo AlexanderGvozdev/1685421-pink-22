@@ -112,6 +112,13 @@
     display: block;
   }
 }
+.form__input-list {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
 .form__fieldset-3 {
   @media (min-width: @tablet-width) {
     display: flex;
