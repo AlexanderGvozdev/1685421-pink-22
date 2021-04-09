@@ -1,12 +1,11 @@
-.form__item {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+.form-section__title {
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 .form__wrapper {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
     grid-template-areas: "fieldset-1"
       "fieldset-4"
       "fieldset-3"
@@ -15,8 +14,6 @@
   }
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas: "fieldset-1 fieldset-4"
       "fieldset-3 fieldset-3"
       "fieldset-2 fieldset-2"
@@ -75,12 +72,21 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  @media (min-width: @tablet-width) {
+    line-height: 30px;
+  }
 }
-.letter-area {
+.form__textarea {
   border: 2px solid #E5E5E5;
   border-radius: 1px;
   width: 276px;
   height: 197px;
+  @media (min-width: @tablet-width) {
+    width: 496px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 816px;
+  }
 }
 .form__section small {
   font-size: 14px;
@@ -90,10 +96,7 @@
 .form__submit-button {
   font-family: inherit;
 }
-.form__fieldset-2,
-.form__fieldset-3,
-.form__fieldset-4,
-.form__fieldset-5 {
+.form__fieldset:not(form__fieldset-1) {
   @media (min-width: @tablet-width) {
     border: 2px solid #E5E5E5;
     border-radius: 1px;
@@ -102,22 +105,65 @@
 }
 .form__legend-desktop {
   display: none;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
   @media (min-width: @tablet-width) {
     display: block;
   }
 }
-.form__fieldset-3 {
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+.form__input-list {
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
   }
 }
-.form__fieldset-5 label  {
+.form__fieldset-3 {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+}
+.form__fieldset-3 .form__field {
+  @media (min-width: @tablet-width) {
+    width: 496px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 371px;
+  }
+}
+.form__fieldset-5 {
+  text-align: center;
+}
+.form__fieldset-5 label {
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+.form__fieldset-2,
+.form__fieldset-4 {
+  text-align: left;
+  margin: 0 -20px;
+  background-color: #F2F2F2;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+.form__field-surname,
+.form__field-middlename {
+  @media (min-width: @tablet-width) {
+    width: 521px;
+  }
+}
+.form__field-name {
+  @media (min-width: @tablet-width) {
+    width: 561px;
   }
 }
