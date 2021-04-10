@@ -85,7 +85,10 @@
   line-height: 30px;
   font-weight: 400;
 }
-.form__fieldset:not(form__fieldset-1) {
+.form__fieldset:first-child {
+  border: none;
+}
+.form__fieldset {
   @media (min-width: @tablet-width) {
     border: 2px solid #E5E5E5;
     border-radius: 1px;
@@ -141,6 +144,7 @@
   margin: 0 -20px;
   background-color: #F2F2F2;
   @media (min-width: @tablet-width) {
+    background-color: initial;
     margin: 0;
     padding: 0 20px;
   }

@@ -14,7 +14,7 @@
           <a class="logo page-header__logo">
             <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
           </a>
-          <nav class="nav">
+          <nav class="nav nav--closed nav--nojs">
             <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="nav__wrapper">
               <ul class="nav__list list-reset">
@@ -261,5 +261,21 @@
           </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.nav');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navMain.classList.remove('nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav--closed')) {
+          navMain.classList.remove('nav--closed');
+          navMain.classList.add('nav--opened');
+        } else {
+          navMain.classList.add('nav--closed');
+          navMain.classList.remove('nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
