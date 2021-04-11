@@ -10,25 +10,96 @@
   }
 }
 .nav__list a {
+  position: relative;
+  display: block;
+  padding: 25px 0;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid black;
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 .nav__item {
-  padding: 25px 25px;
-  box-shadow: 0px 1px 0px black;
   @media (min-width: @desktop-width) {
-    box-shadow: none;
     margin-right: 78px;
     padding: 0;
   }
 }
  .nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: #283645;
+  cursor: pointer;
+  border: none;
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
 
+.nav--closed .nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+@media (max-width: @mobile-width-only) {
+  .nav--closed .nav__item {
+    display: none;
+  }
+  .nav--opened .nav__toggle {
+    top: -8px;
+    right: auto;
+    left: 250px;
 
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#ffffff, 30%);
+    }
+  }
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+  .nav--nojs .nav__item {
+    display: block;
+  }
+}
 
 

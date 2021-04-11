@@ -35,6 +35,8 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  outline: 5px solid fade(green, 80%);
+  outline-offset: -5px;
 }
 .user-photo__like,
 .user-photo-panorama__like {
@@ -46,5 +48,37 @@
 .user-photo__button-like,
 .user-photo-panorama__button-like {
   border: none;
+}
+.user-photo__container,
+.user-photo-panorama__container {
+  display: flex;
+  flex-direction: row;
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
+}
+.user-photo__container button,
+.user-photo-panorama__container button {
+  order: 0;
+}
+.user-photo__container p,
+.user-photo-panorama__container p {
+  order: 2;
+}
+.user-photo-panorama__grid {
+  display: grid;
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.user-photo-panorama__grid .user-photo-panorama__author-desc {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+.user-photo-panorama__grid div {
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
 }
 
