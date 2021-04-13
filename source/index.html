@@ -12,7 +12,11 @@
       <div class="container">
         <div class="page-header__container">
           <a class="logo page-header__logo">
-            <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+           <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+            <img src="img/pink.svg" alt="Логотип Пинк">
+           </picture>
           </a>
           <nav class="nav nav--closed nav--nojs">
             <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -60,6 +64,7 @@
                 <li class="platforms__brand"><a href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></a></li>
               </ul>
             <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <img src="img/phone.png" alt="">
             </div>
           </div>
         </div>
@@ -84,9 +89,19 @@
                 </div>
               </div>
               <div class="description__phone-image">
-                <img class="description__phone-image-1" src="img/iphone-3.png" width="157" height="320" alt="изображение айфона">
-                <img class="description__phone-image-2" src="img/iphone-2.png" width="157" height="320" alt="изображение айфона">
-                <img class="description__phone-image-3" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="img/advantage-phone-sad.png">
+                  <img class="description__phone-image-1" src="img/advantage-phone-sad.png" alt="изображение айфона">
+                </picture>
+                <picture>
+                  <source media="(min-width: 660px)" srcset="img/advantage-phone-normal.png">
+                  <img class="description__phone-image-2" src="img/advantage-phone-normal.png" alt="изображение айфона">
+                </picture>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantage-phone-happy.png">
+                  <source media="(min-width: 660px)" srcset="img/advantages-iphone-tablet.png">
+                  <img class="description__phone-image-3" src="img/advantages-iphone-happy.png" srcset="img/advantages-iphone-mobile-x2.png" alt="изображение айфона">
+                </picture>
               </div>
             </div>
           </div>
@@ -230,7 +245,10 @@
             <img src="img/map.png" width="320" height="200" alt="карта">
           </div>
           <div class="page-footer__social-wrapper">
-            <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/footer-logo-desktop.svg">
+              <img class=" logo page-footer__logo" src="img/footer-logo.svg" alt="логотип Пинк">
+            </picture>
             <div class="page-footer__social social">
               <ul class="social__list list-reset">
                 <li class="social__item">

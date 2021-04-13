@@ -205,3 +205,34 @@
   left: -26px;
   top: 1px;
 }
+.form__fieldset-3 .form__item{
+  position: relative;
+}
+.form__fieldset-3 .form__item-phone::before {
+  @media (min-width: @tablet-width) {
+  content: "";
+  position: absolute;
+  background-image: url(../img/old-phone.svg);
+  width: 59px;
+  height: 59px;
+  bottom: 30px;
+  right: 96px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 0;
+  }
+}
+.form__fieldset-3 .form__item-mail::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url(../img/mail-icon.svg);
+    width: 59px;
+    height: 59px;
+    bottom: 30px;
+    right: 96px;
+  }
+  @media (min-width: @desktop-width) {
+    right: 0;
+  }
+}

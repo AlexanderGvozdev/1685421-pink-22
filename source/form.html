@@ -12,7 +12,11 @@
       <div class="container">
         <div class="page-header__container">
           <a class="logo page-header__logo" href="index.html">
-            <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+              <img src="img/pink.svg" alt="Логотип Пинк">
+             </picture>
           </a>
           <nav class="nav nav--closed nav--nojs">
             <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -108,11 +112,11 @@
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset-3">
                     <legend class="form__legend form__legend-desktop">контактная информация</legend>
-                  <p class="form__item form__item-desktop">
+                  <p class="form__item form__item-desktop form__item-phone">
                     <label for="phone" class="form__label">номер телефона</label>
                     <input required class="form__field" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
                   </p>
-                  <p class="form__item form__item-desktop">
+                  <p class="form__item form__item-desktop form__item-mail">
                     <label for="email" class="form__label">адрес почты</label>
                     <input required class="form__field" id="email" type="email" name="mail" placeholder="Введите почту *">
                   </p>
@@ -154,7 +158,10 @@
       <div class="container">
         <div class="page-footer__wrapper">
           <div class="page-footer__social-wrapper">
-            <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/footer-logo-desktop.svg">
+              <img class=" logo page-footer__logo" src="img/footer-logo.svg" alt="логотип Пинк">
+            </picture>
             <div class="page-footer__social social">
               <ul class="social__list list-reset">
                 <li class="social__item">
