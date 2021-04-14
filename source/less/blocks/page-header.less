@@ -1,8 +1,18 @@
 .page-header {
+  position: relative;
   background-color: #283645;
-  z-index: 3;
+  background-image: url(../img/back-mobile.png);
+  background-position: 50% 416px;
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 0 0 38px 0;
   @media (min-width: @desktop-width) {
-    opacity: 0.3;
+
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet@2x.png");
+    background-size: 1460px auto;
   }
 }
 .page-header__container {
