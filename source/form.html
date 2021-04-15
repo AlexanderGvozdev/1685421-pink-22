@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--closed">
       <div class="container">
         <div class="page-header__container">
           <a class="logo page-header__logo" href="index.html">
@@ -47,13 +47,14 @@
           </nav>
         </div>
       </div>
+      <div class="description-section">
+        <div class="container">
+          <h3 class="description-section__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
+        </div>
+      </div>
     </header>
     <main class="form-main">
-        <div class="description-section">
-          <div class="container">
-            <h3 class="description-section__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
-          </div>
-        </div>
+
         <section class="page-section form-section">
           <div class="container">
             <h3 class="page-section__title form-section__title">Поделитесь своей историей и получите
@@ -215,15 +216,19 @@
     <script>
       var navMain = document.querySelector('.nav');
       var navToggle = document.querySelector('.nav__toggle');
+      var headerClosed = document.querySelector('.page-header');
 
       navMain.classList.remove('nav--nojs');
+      headerClosed.classList.add('page-header--closed');
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('nav--closed')) {
           navMain.classList.remove('nav--closed');
+          headerClosed.classList.remove('page-header--closed');
           navMain.classList.add('nav--opened');
         } else {
           navMain.classList.add('nav--closed');
+          headerClosed.classList.add('page-header--closed');
           navMain.classList.remove('nav--opened');
         }
       });

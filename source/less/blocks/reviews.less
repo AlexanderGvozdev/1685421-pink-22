@@ -1,11 +1,12 @@
 .reviews {
   text-align: center;
   min-height: 405px;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 5vw));
+}
+.reviews__image {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }
 .reviews__author-info {
   padding-top: 150px;
@@ -51,5 +52,30 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+.reviews__item {
+  position: relative;
+}
+.reviews__button-left {
+  display: none;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  left: -30px;
+  top: 50px;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+.reviews__button-right {
+  display: none;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: -30px;
+  top: 50px;
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
