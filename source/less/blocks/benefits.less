@@ -1,14 +1,21 @@
 .benefits {
   background-color: #F2F2F2;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
 }
 .benefits__wrapper {
   padding-top: 100px;
 }
 .benefits-table {
+  position: absolute;
+  left: -260px;
   border-collapse: collapse;
   border-spacing: 2px;
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
 }
-
 .benefits-table__title,
 .benefits-table__cell {
   min-width: 280px;
