@@ -12,7 +12,11 @@
       <div class="container">
         <div class="page-header__container">
           <a class="logo page-header__logo">
+           <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
             <img src="img/pink.svg" width="74" height="23" alt="Логотип Пинк">
+           </picture>
           </a>
           <nav class="nav nav--closed nav--nojs">
             <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -20,22 +24,22 @@
               <ul class="nav__list list-reset">
                 <li class="nav__item nav__item--active">
                   <a>
-                    главная
+                    Главная
                   </a>
                 </li>
                 <li class="nav__item">
                   <a href="catalog.html">
-                    фотографии
+                    Фотографии
                   </a>
                 </li>
                 <li class="nav__item">
                   <a href="form.html">
-                    конкурс
+                    Конкурс
                   </a>
                 </li>
                 <li class="nav__item">
                   <a href="#">
-                    html academy
+                    HTML Academy
                   </a>
                 </li>
               </ul>
@@ -43,12 +47,10 @@
           </nav>
         </div>
       </div>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Пинк</h1>
       <section class="download">
         <div class="container">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+          <img src="img/phone.png" alt="рука с айфоном">
         </div>
         <div class="download__container">
           <div class="container">
@@ -60,10 +62,15 @@
                 <li class="platforms__brand"><a href="#"><img src="img/microsoft-logo.svg" width="44" height="41" alt="логотип Microsoft"></a></li>
               </ul>
             <p class="download__features">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
             </div>
           </div>
         </div>
       </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Пинк</h1>
+
       <section class="description">
         <div class="description__container">
           <h3 class="page-title description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h3>
@@ -84,9 +91,19 @@
                 </div>
               </div>
               <div class="description__phone-image">
-                <img class="description__phone-image-1" src="img/iphone-3.png" width="157" height="320" alt="изображение айфона">
-                <img class="description__phone-image-2" src="img/iphone-2.png" width="157" height="320" alt="изображение айфона">
-                <img class="description__phone-image-3" src="img/iphone.png" width="157" height="320" alt="изображение айфона">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="img/advantage-phone-sad.png">
+                  <img class="description__phone-image-1" src="img/advantage-phone-sad.png" alt="изображение айфона">
+                </picture>
+                <picture>
+                  <source media="(min-width: 660px)" srcset="img/advantage-phone-normal.png">
+                  <img class="description__phone-image-2" src="img/advantage-phone-normal.png" alt="изображение айфона">
+                </picture>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantage-phone-happy.png">
+                  <source media="(min-width: 660px)" srcset="img/advantages-iphone-tablet.png">
+                  <img class="description__phone-image-3" src="img/advantages-iphone-happy.png" srcset="img/advantages-iphone-mobile-x2.png" alt="изображение айфона">
+                </picture>
               </div>
             </div>
           </div>
@@ -112,6 +129,9 @@
           <h2 class="visually-hidden">отзывы</h2>
           <div class="reviews__list reviews__slider">
             <blockquote class="reviews__item slider__item">
+              <img class="reviews__image" src="img/quotes.svg" width="79" height="63">
+              <button class="reviews__button-left"><img src="img/left-arrow.svg"></button>
+              <button class="reviews__button-right"><img src="img/right-arrow.svg"></button>
               <div class="reviews__author-info">
                 <div class="reviews__wrapper">
                   <cite class="reviews__author-name">Николай Петров</cite>
@@ -230,7 +250,10 @@
             <img src="img/map.png" width="320" height="200" alt="карта">
           </div>
           <div class="page-footer__social-wrapper">
-            <img class=" logo page-footer__logo" src="img/footer-logo.svg" width="145" height="40" alt="логотип Пинк">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/footer-logo-desktop.svg">
+              <img class=" logo page-footer__logo" src="img/footer-logo.svg" alt="логотип Пинк">
+            </picture>
             <div class="page-footer__social social">
               <ul class="social__list list-reset">
                 <li class="social__item">
@@ -264,15 +287,19 @@
     <script>
       var navMain = document.querySelector('.nav');
       var navToggle = document.querySelector('.nav__toggle');
+      var headerClosed = document.querySelector('.page-header');
 
       navMain.classList.remove('nav--nojs');
+      headerClosed.classList.add('page-header--closed');
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('nav--closed')) {
           navMain.classList.remove('nav--closed');
+          headerClosed.classList.remove('page-header--closed');
           navMain.classList.add('nav--opened');
         } else {
           navMain.classList.add('nav--closed');
+          headerClosed.classList.add('page-header--closed');
           navMain.classList.remove('nav--opened');
         }
       });

@@ -10,13 +10,11 @@
     grid-template-columns: repeat(3, 300px);
   }
 }
-.user-photo,
-.user-photo-panorama {
+.user-photo {
   background-color: #F2F2F2;
 }
 .user-photo-panorama img {
-  margin-left: -20px;
-  margin-right: -20px;
+  width: 100%;
 }
 .user-photo__author,
 .user-photo-panorama__author {
@@ -35,8 +33,6 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  outline: 5px solid fade(green, 80%);
-  outline-offset: -5px;
 }
 .user-photo__like,
 .user-photo-panorama__like {
@@ -66,6 +62,7 @@
   order: 2;
 }
 .user-photo-panorama__grid {
+  background-color: #F2F2F2;
   display: grid;
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, auto);
