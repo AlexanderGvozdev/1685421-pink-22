@@ -168,12 +168,24 @@
             <h3 class="photo-editor__title">Затмите их всех!
               Выкладывайте все, что накопилось в телефоне!</h3>
             <div class="photo-editor__container">
-              <input class="photo-editor__item" type="file" name="photo">
-              <input class="photo-editor__item" type="range">
-              <input class="photo-editor__item" type="range">
-              <input class="photo-editor__item" type="range">
-              <button class="photo-editor__submit-button" type="submit">Запостить</button>
-              <button class="photo-editor__reset-button" type="reset">Отмена</button>
+              <div class="photo-editor__wrapper-photo">
+                <picture>
+                  <source media="(nim-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2.jpg 2x">
+                  <img src="img/photo-7.jpg" srcset="img/photo-7@2.jpg">
+                </picture>
+                <input class="photo-editor__item photo-editor__item-file" type="file" name="photo">
+              </div>
+              <div class="photo-editor__grid-wrapper">
+                <div class="photo-editor__wrapper-input">
+                  <input class="photo-editor__item" type="range">
+                  <input class="photo-editor__item" type="range">
+                  <input class="photo-editor__item" type="range">
+                </div>
+                <div class="photo-editor__wrapper-button">
+                  <button class="photo-editor__submit-button" type="submit">Запостить</button>
+                  <button class="photo-editor__reset-button" type="reset">Отмена</button>
+                </div>
+              </div>
             </div>
           </div>
         </form>

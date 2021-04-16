@@ -48,9 +48,13 @@
         </div>
       </div>
       <section class="download">
-        <div class="container">
+        <div class="container download__wrapper-position">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-          <img src="img/phone.png" alt="рука с айфоном">
+         <picture>
+          <source media="(min-width: 1200px)" srcset="img/phone-desktop.png">
+          <source media="(min-width: 660px)" srcset="img/phone-tablet.png">
+          <img class="download__hand-iphone" src="img/phone.png" alt="рука с айфоном">
+         </picture>
         </div>
         <div class="download__container">
           <div class="container">

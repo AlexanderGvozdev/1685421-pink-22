@@ -1,6 +1,12 @@
 .download {
   min-height: 396px;
   color: white;
+  @media (min-width: @tablet-width) {
+    min-height: 619px;
+  }
+  @media (min-width: @desktop-width) {
+    min-height: 743px;
+  }
 }
 .download__container {
   background-color: #1D2631;
@@ -8,11 +14,29 @@
     background-color: initial;
   }
 }
+.download__wrapper-position {
+  position: relative;
+}
+.download__hand-iphone {
+  overflow: hidden;
+  position: absolute;
+  top: 140px;
+  left: 1px;
+  @media (min-width: @tablet-width) {
+    top: 74px;
+    left: 1px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 98px;
+    left: 145px;
+  }
+}
 .download__wrapper {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 5;
   @media (min-width: @tablet-width) {
     text-align: left;
     margin-left: 60px;
@@ -32,9 +56,11 @@
   line-height: 29px;
   font-weight: 300;
   padding-top: 29px;
+  padding-bottom: 320px;
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+    padding-bottom: 210px;
   }
   @media (min-width: @desktop-width) {
     font-size: 50px;

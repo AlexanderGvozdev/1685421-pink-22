@@ -1,8 +1,14 @@
 .benefits {
-  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
+  background-image: url(../img/background-benefits.svg);
   position: relative;
   overflow: hidden;
   min-height: 500px;
+  @media (min-width: @desktop-width) {
+    background-image: url(../img/background-benefits-desktop.svg)
+  }
 }
 .benefits__wrapper {
   padding-top: 100px;
@@ -167,16 +173,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 45px 0 0 0;
+  margin: 310px 0 0 0;
   @media (min-width: @tablet-width) {
     display: none;
-  }
-}
-
-.benefits__toggle {
-  margin: 0 19px 0 0;
-
-  &:last-child {
-    margin: 0;
   }
 }

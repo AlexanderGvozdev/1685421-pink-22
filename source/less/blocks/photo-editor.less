@@ -8,12 +8,18 @@
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: 1fr;
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .photo-editor__title {
   line-height: 30px;
   font-size: 14px;
   font-weight: 400;
   background-color: initial;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 .photo-editor__submit-button {
   font-family: inherit;
@@ -25,6 +31,12 @@
   border-radius: 30px;
   width: 280px;
   height: 55px;
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
 .photo-editor__reset-button {
   font-size: 18px;
@@ -36,4 +48,43 @@
   border-radius: 30px;
   width: 280px;
   height: 55px;
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
+.photo-editor__wrapper-photo {
+  position: relative;
+  max-width: 300px;
+}
+.photo-editor__item-file {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90%;
+  height: 90%;
+  opacity: 0;
+}
+.photo-editor__wrapper-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: @tablet-width) {
+    row-gap: 71px;
+  }
+}
+.photo-editor__wrapper-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+  @media (min-width: @tablet-width) {
+    row-gap: 24px;
+    margin-top: 67px;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 44px;
+  }
+}
+
