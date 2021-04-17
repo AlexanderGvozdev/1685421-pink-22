@@ -36,7 +36,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 5;
   @media (min-width: @tablet-width) {
     text-align: left;
     margin-left: 60px;
@@ -81,14 +80,24 @@
   border: 3px solid currentColor;
   border-radius: 29px;
   padding: 10px;
+  z-index: 6;
   @media (min-width: @desktop-width) {
     font-size: 21px;
+  }
+  &:hover {
+    background-color: white;
+    color: #D22856;
+    border: transparent;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 .download__features {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+  z-index: 6;
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }

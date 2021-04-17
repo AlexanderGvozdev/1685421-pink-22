@@ -40,6 +40,12 @@
   border-radius: 1px;
   width: 276px;
   height: 59px;
+  &:hover {
+    border: 2px solid #283645;
+  }
+  &:active {
+    border: 2px solid #D22856;
+  }
 }
 .form__fieldset {
   border: none;
@@ -163,6 +169,12 @@
 .form__input--radio + label {
   position: relative;
 }
+.form__input--radio:hover + label::before {
+  border: 2px solid #283645;
+}
+.form__input--radio:active + label::before {
+  border: 2px solid #D22856;
+}
 .form__input--radio + label::before {
   content: "";
   position: absolute;
@@ -193,6 +205,12 @@
   width: 33px;
   height: 33px;
   left: -35px;
+}
+.form__input--checkbox:hover + label::before {
+  border: 2px solid #283645;
+}
+.form__input--checkbox:active + label::before {
+  border: 2px solid #D22856;
 }
 .form__input--checkbox:checked + label::after {
   content: "";

@@ -37,6 +37,13 @@
   @media (min-width: @desktop-width) {
     width: 183px;
   }
+  &:hover {
+    background-color: #D22856;
+    color: white;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 .photo-editor__reset-button {
   font-size: 18px;
@@ -53,6 +60,14 @@
   }
   @media (min-width: @desktop-width) {
     width: 183px;
+  }
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
   }
 }
 .photo-editor__wrapper-photo {

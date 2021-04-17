@@ -6,6 +6,9 @@
   background-size: 100% 40%;
   background-repeat: no-repeat;
   color: white;
+  @media (min-width: @tablet-width) {
+    background-position: 50% 432px;
+  }
   &--closed {
     background-position: 50% 72px;
     background-size: 100% 78%;
@@ -38,6 +41,19 @@
   padding-top: 23px;
   padding-bottom: 23px;
 }
+.page-header__logo img {
+  width: 74px;
+  height: 23px;
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
 
 
 

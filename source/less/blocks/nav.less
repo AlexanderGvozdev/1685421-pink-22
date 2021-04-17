@@ -23,6 +23,17 @@
     border: none;
     text-transform: none;
   }
+  &:hover {
+    color: #D22856;
+  }
+  &:active {
+    color: #D22856;
+    opacity: 0.3;
+    @media (min-width: @desktop-width) {
+      color: white;
+      opacity: 0.3;
+    }
+  }
 }
 .nav__item {
   margin: 0 -20px;
@@ -31,6 +42,20 @@
     padding: 0;
     &:last-child {
       margin-right: 0;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &--active {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 109px;
+        height: 2px;
+        top: 59px;
+        left: -20px;
+        background-color: white;
+      }
     }
   }
 }
@@ -99,12 +124,12 @@
       background-color: fade(#ffffff, 30%);
     }
   }
+}
   .nav--nojs .nav__toggle {
     display: none;
   }
   .nav--nojs .nav__item {
     display: block;
   }
-}
 
 
