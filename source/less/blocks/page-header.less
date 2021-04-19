@@ -10,12 +10,13 @@
     background-position: 50% 366px;
   }
   &--closed {
+    background-color: fade(#000000, 30%);
     background-color: #283645;
     background-position: 50% 0;
     background-size: 100% 78%;
   }
   @media (min-width: @tablet-width) {
-    background-image: url(../img/back-tablet@2x.png);
+    background-image: url(../img/back-tablet.png);
     background-size: 100% 100%;
   }
   @media (min-width: @desktop-width) {
@@ -35,6 +36,9 @@
     font-size: 18px;
     line-height: 18px;
   }
+}
+.page-header-color {
+  background-color: fade(#000000, 30%);
 }
 .page-header__logo {
   display: block;
