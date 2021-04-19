@@ -6,14 +6,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 22px;
-    margin-left: 156px;
+    margin-top: 31px;
+    margin-left: 191px;
   }
 }
 .nav__list a {
   position: relative;
   display: block;
-  padding: 25px 0;
+  padding: 15px 0;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -67,7 +67,7 @@
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #283645;
+  background-color: transparent;
   cursor: pointer;
   border: none;
   @media (min-width: @desktop-width) {
@@ -96,8 +96,11 @@
     display: none;
   }
   .nav--opened .nav__toggle {
-    top: -8px;
-    right: 10px;
+    top: 10px;
+    right: 18px;
+    @media (min-width: @tablet-width) {
+      top: 31px;
+    }
 
     &::before,
     &::after {

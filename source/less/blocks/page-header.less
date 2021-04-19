@@ -2,15 +2,16 @@
   position: relative;
   background-color: #283645;
   background-image: url(../img/back-mobile.png);
-  background-position: 50% 416px;
+  background-position: 50% 324px;
   background-size: 100% 40%;
   background-repeat: no-repeat;
   color: white;
   @media (min-width: @tablet-width) {
-    background-position: 50% 432px;
+    background-position: 50% 366px;
   }
   &--closed {
-    background-position: 50% 72px;
+    background-color: transparent;
+    background-position: 50% 0;
     background-size: 100% 78%;
   }
   @media (min-width: @tablet-width) {
@@ -39,7 +40,15 @@
   display: block;
   padding-left: 20px;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 46px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 87px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-top: 26px;
+    padding-bottom: 46px;
+  }
 }
 .page-header__logo img {
   width: 74px;

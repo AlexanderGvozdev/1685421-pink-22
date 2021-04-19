@@ -1,12 +1,5 @@
 .download {
-  min-height: 396px;
   color: white;
-  @media (min-width: @tablet-width) {
-    min-height: 619px;
-  }
-  @media (min-width: @desktop-width) {
-    min-height: 743px;
-  }
 }
 .download__container {
   background-color: #1D2631;
@@ -20,14 +13,14 @@
 .download__hand-iphone {
   overflow: hidden;
   position: absolute;
-  top: 140px;
+  top: 89px;
   left: 1px;
   @media (min-width: @tablet-width) {
-    top: 74px;
+    top: 40px;
     left: 1px;
   }
   @media (min-width: @desktop-width) {
-    top: 98px;
+    top: 86px;
     left: 145px;
   }
 }
@@ -54,16 +47,23 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  padding-top: 29px;
-  padding-bottom: 320px;
+  padding-top: 4px;
+  padding-bottom: 294px;
+  text-align: center;
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    padding-bottom: 210px;
+    padding-left: 55px;
+    padding-top: 61px;
+    padding-bottom: 0;
+    width: 239px;
   }
   @media (min-width: @desktop-width) {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 68px;
+    padding-left: 32px;
+    padding-top: 90px;
+    width: 263px;
   }
 }
 .download__button {
@@ -80,9 +80,16 @@
   border: 3px solid currentColor;
   border-radius: 29px;
   padding: 10px;
+  margin-top: 28px;
   z-index: 6;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-top: -3px;
+    margin-left: -62px;
+  }
   @media (min-width: @desktop-width) {
     font-size: 21px;
+    margin-top: -7px;
   }
   &:hover {
     background-color: white;
@@ -98,7 +105,19 @@
   line-height: 24px;
   font-weight: 300;
   z-index: 6;
+  margin-top: 0;
+  margin-bottom: 31px;
   @media (min-width: @tablet-width) {
+    width: 300px;
+    text-align: center;
     font-size: 18px;
+    margin-top: 12px;
+    margin-left: -60px;
+    margin-bottom: 112px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 33px;
+    margin-left: -60px;
+    margin-bottom: 123px;
   }
 }
