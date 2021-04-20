@@ -10,7 +10,6 @@
     background-position: 50% 366px;
   }
   &--closed {
-    background-color: fade(#000000, 30%);
     background-color: #283645;
     background-position: 50% 0;
     background-size: 100% 78%;
@@ -42,27 +41,21 @@
 }
 .page-header__logo {
   display: block;
-  padding-left: 20px;
-  padding-top: 23px;
-  padding-bottom: 46px;
+  margin-left: -72px;
+  padding-top: 7px;
+  padding-bottom: 12px;
   @media (min-width: @tablet-width) {
-    padding-bottom: 87px;
+    padding-top: 26px;
+    padding-bottom: 34px;
+    margin-left: 0;
   }
   @media (min-width: @desktop-width) {
     padding-left: 0;
     padding-top: 26px;
     padding-bottom: 46px;
   }
-}
-.page-header__logo img {
-  width: 74px;
-  height: 23px;
-  @media (min-width: @tablet-width) {
-    width: 145px;
-    height: 40px;
-  }
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
+  &:hover {
+    fill: #d22856;
   }
 }
+
