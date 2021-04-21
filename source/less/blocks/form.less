@@ -40,6 +40,12 @@
   border-radius: 1px;
   width: 276px;
   height: 59px;
+  &:hover {
+    border: 2px solid #283645;
+  }
+  &:active {
+    border: 2px solid #D22856;
+  }
 }
 .form__fieldset {
   border: none;
@@ -163,6 +169,12 @@
 .form__input--radio + label {
   position: relative;
 }
+.form__input--radio:hover + label::before {
+  border: 2px solid #283645;
+}
+.form__input--radio:active + label::before {
+  border: 2px solid #D22856;
+}
 .form__input--radio + label::before {
   content: "";
   position: absolute;
@@ -194,6 +206,12 @@
   height: 33px;
   left: -35px;
 }
+.form__input--checkbox:hover + label::before {
+  border: 2px solid #283645;
+}
+.form__input--checkbox:active + label::before {
+  border: 2px solid #D22856;
+}
 .form__input--checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -205,24 +223,24 @@
   left: -26px;
   top: 1px;
 }
-.form__fieldset-3 .form__item{
+.form__fieldset-3 .form__item {
   position: relative;
-}
-.form__fieldset-3 .form__item-phone::before {
+  }
+.form__fieldset-3 .form__item--phone::before {
   @media (min-width: @tablet-width) {
-  content: "";
-  position: absolute;
-  background-image: url(../img/old-phone.svg);
-  width: 59px;
-  height: 59px;
-  bottom: 30px;
-  right: 96px;
+    content: "";
+    position: absolute;
+    background-image: url(../img/old-phone.svg);
+    width: 59px;
+    height: 59px;
+    bottom: 30px;
+    right: 96px;
+    }
+    @media (min-width: @desktop-width) {
+      right: 0;
+    }
   }
-  @media (min-width: @desktop-width) {
-    right: 0;
-  }
-}
-.form__fieldset-3 .form__item-mail::before {
+.form__fieldset-3 .form__item--mail::before {
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
@@ -231,8 +249,8 @@
     height: 59px;
     bottom: 30px;
     right: 96px;
+    }
+    @media (min-width: @desktop-width) {
+      right: 0;
+    }
   }
-  @media (min-width: @desktop-width) {
-    right: 0;
-  }
-}
