@@ -55,4 +55,15 @@
     padding-bottom: 46px
   }
 }
-
+.page-header__logo-mobile {
+  display: block;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+.page-header__logo-desktop {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
