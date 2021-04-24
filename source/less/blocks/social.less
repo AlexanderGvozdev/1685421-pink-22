@@ -1,6 +1,8 @@
 .social__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(3, 48px);
+  gap: 10px;
 }
 .social__item {
   display: flex;
@@ -10,4 +12,13 @@
   border-radius: 50%;
   width: 48px;
   height: 48px;
+}
+.social__item:hover {
+  border: 3px solid rgba(40, 54, 69, 1);
+}
+.social__item:active {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+}
+.social__item:active path {
+  opacity: 0.3;
 }
