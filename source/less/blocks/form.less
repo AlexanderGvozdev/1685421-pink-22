@@ -1,9 +1,12 @@
 .form-section__title {
+  margin-top: 44px;
+  text-align: center;
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }
 }
 .form__wrapper {
+  margin-top: 1px;
   @media (min-width: @tablet-width) {
     display: grid;
     justify-content: center;
@@ -22,6 +25,8 @@
 }
 .form__fieldset-1 {
   grid-area: fieldset-1;
+  padding: 0;
+  margin-top: 28px;
 }
 .form__fieldset-2 {
   grid-area: fieldset-2;
@@ -39,7 +44,6 @@
   font-family: inherit;
   border: 2px solid #E5E5E5;
   border-radius: 1px;
-  width: 276px;
   height: 59px;
   &:hover {
     border: 2px solid #283645;
@@ -56,6 +60,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .form__item input,
 .form__input-item label,
@@ -77,6 +82,7 @@
   line-height: 18px;
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
   @media (min-width: @tablet-width) {
     line-height: 30px;
   }
@@ -260,7 +266,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 26px;
     @media (min-width: @tablet-width) {
       flex-direction: row;
     }
   }
+.form__item-field-1 label {
+  margin-left: 21px;
+  margin-top: -7px;
+  margin-bottom: 7px;
+}
+.form__item-field-1 input {
+  padding-left: 18px;
+}

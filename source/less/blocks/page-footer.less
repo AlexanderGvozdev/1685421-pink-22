@@ -5,14 +5,19 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  margin-top: 23px;
+  margin-bottom: 24px;
   @media (min-width: @tablet-width) {
     width: 100%;
     font-size: 40px;
     line-height: 55px;
+    margin-top: 43px;
+    margin-bottom: 0;
   }
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    margin-top: 58px;
   }
 }
 .page-footer__social-wrapper {
@@ -26,10 +31,12 @@
   flex-direction: column;
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: -4px;
   }
   @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
     div:nth-child(3) {
       order: 0;
     }
