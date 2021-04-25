@@ -76,9 +76,9 @@
     <main class="form-main">
         <section class="page-section form-section">
           <div class="container">
-            <h3 class="page-section__title form-section__title">Поделитесь своей историей и получите
-              шанс выиграть ценный приз — 1000
-              миль на вашу бонусную карту!</h3>
+            <h3 class="page-section__title form-section__title"><span>Поделитесь своей историей и получите
+              шанс выиграть<br> ценный приз — 1000
+              миль на <span>вашу бонусную карту! </span><span class="form-section__subtitle">Пожалуйста, заполните форму ниже:</span></h3>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
               <div class="form__wrapper">
                 <fieldset class="form__fieldset form__fieldset-1">
@@ -95,7 +95,8 @@
                       <input class="form__field form__field-middlename" id="middlename-field" name="name" placeholder="Ну и отчество тоже">
                     </p>
                 </fieldset>
-                <fieldset class="form__fieldset form__fieldset-2">
+                <div class="form__fieldset-color">
+                  <fieldset class="form__fieldset form__fieldset-2">
                     <legend class="form__legend">Ваши безбашенные<br> достижения в путешествии</legend>
                   <div class="form__input-list">
                       <ul class="form__input-item list-reset">
@@ -130,6 +131,7 @@
                       </ul>
                   </div>
                 </fieldset>
+                </div>
                 <fieldset class="form__fieldset form__fieldset-3">
                     <legend class="form__legend form__legend-desktop">контактная информация</legend>
                   <p class="form__item form__item-desktop form__item--phone">
@@ -141,7 +143,8 @@
                     <input required class="form__field" id="email" type="email" name="mail" placeholder="Введите почту *">
                   </p>
                 </fieldset>
-                <fieldset class="form__fieldset form__fieldset-4">
+                <div class="form__fieldset-color form__fieldset-color-2">
+                  <fieldset class="form__fieldset form__fieldset-4">
                     <legend class="form__legend">С каким приложением путешествовали?</legend>
                   <ul class="form__radio-list list-reset">
                     <li class="form__radio-item">
@@ -158,6 +161,7 @@
                     </li>
                   </ul>
                 </fieldset>
+                </div>
                 <fieldset class="form__fieldset form__fieldset-5">
                     <legend class="form__legend form__legend-desktop">опишите свои эмоции</legend>
                   <p class="form__item">
@@ -166,10 +170,12 @@
                   </p>
                 </fieldset>
               </div>
-              <button class="button form__submit-button" type="submit">отправить форму</button>
-              <p class="form__desc">
-              <small>* — обязательные поля</small>
-              </p>
+              <div class="form__desc-wrapper">
+                <button class="button form__submit-button" type="submit">отправить форму</button>
+                <p class="form__desc">
+                  <small>* — обязательные поля</small>
+                </p>
+              </div>
             </form>
           </div>
         </section>
