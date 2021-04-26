@@ -8,6 +8,7 @@
   @media (min-width: @desktop-width) {
     width: 756px;
     margin-left: 92px;
+    margin-bottom: 18px;
   }
 }
 .form-section__title br {
@@ -135,6 +136,13 @@
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
     line-height: 30px;
+  }
+}
+@-moz-document url-prefix() {
+  .form__legend {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .form__textarea {
