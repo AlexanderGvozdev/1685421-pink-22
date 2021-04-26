@@ -1,11 +1,25 @@
 .photo-section__wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill,minmax(280px,300px));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
   gap: 20px;
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    row-gap: 22px;
+  }
+  @media (min-width: @desktop-width) {
+    row-gap: 57px;
+  }
 }
 .user-photo {
   background-color: #F2F2F2;
+
+  &:first-child {
+    margin-top: 25px;
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+  }
 }
 .user-photo__img {
   @media (min-width: @tablet-width) {
@@ -29,11 +43,20 @@
   line-height: 24px;
   font-weight: 700;
 }
+.user-photo__author {
+  margin-top: 10px;
+  margin-left: 17px;
+  margin-bottom: -14px;
+}
+.user-photo-panorama__author {
+  margin-bottom: -15px;
+}
 .user-photo__time,
 .user-photo-panorama__time {
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 .user-photo__author-desc,
 .user-photo-panorama__author-desc {
@@ -41,16 +64,51 @@
   line-height: 24px;
   font-weight: 400;
 }
+.user-photo__author-desc {
+  margin-left: 17px;
+  margin-bottom: 15px;
+  @media (min-width: @tablet-width) {
+    margin-left: 17px;
+    margin-bottom: 15px;
+  }
+}
+.user-photo-panorama__author-desc {
+  @media (min-width: @tablet-width) {
+    margin-top: -14px;
+  }
+}
+.user-photo-panorama__author-desc br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
 .user-photo__like,
 .user-photo-panorama__like {
   color: #D22856;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
+}
+.user-photo__like {
+  margin-left: 12px;
+  margin-top: -3px;
+  @media (min-width: @tablet-width) {
+    margin-top: -3px;
+    margin-left: 15px;
+  }
 }
 .user-photo__button-like,
 .user-photo-panorama__button-like {
   border: none;
+}
+.user-photo__button-like {
+  margin-left: 11px;
+  margin-top: -19px;
+  @media (min-width: @tablet-width) {
+    margin-top: -19px;
+    margin-right: 25px;
+  }
 }
 .user-photo__container,
 .user-photo-panorama__container {
@@ -58,6 +116,27 @@
   flex-direction: row;
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.user-photo__container {
+  padding-bottom: 6px;
+}
+.user-photo-panorama__container {
+  margin-left: -6px;
+  margin-top: -14px;
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+    margin-left: 291px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 613px;
+  }
+}
+.user-photo-panorama__like {
+  margin-left: 12px;
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
   }
 }
 .user-photo__container button,
@@ -68,21 +147,50 @@
 .user-photo-panorama__container p {
   order: 2;
 }
-.user-photo-panorama__grid {
+.user-photo-panorama__flex {
   background-color: #F2F2F2;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-top: 5px;
   @media (min-width: @tablet-width) {
-    grid-template-columns: repeat(2, auto);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
   }
 }
-.user-photo-panorama__grid .user-photo-panorama__author-desc {
+.user-photo-panorama__flex .user-photo-panorama__author-desc {
   @media (min-width: @tablet-width) {
     order: 2;
   }
 }
-.user-photo-panorama__grid div {
+.user-photo-panorama__flex div {
   @media (min-width: @tablet-width) {
     order: 0;
+  }
+}
+.user-photo__desc-container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    margin-left: 14px;
+    margin-top: 8px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 11px;
+  }
+}
+.user-photo__desc-container-2 .user-photo__container,
+.user-photo__desc-container-4 .user-photo__container,
+.user-photo__desc-container-5 .user-photo__container,
+.user-photo__desc-container-6 .user-photo__container {
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
   }
 }
 
