@@ -9,8 +9,12 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
+  margin-bottom: 40px;
   @media (min-width: @tablet-width) {
     grid-template-columns: 300px auto;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 100px;
   }
 }
 .photo-editor__title {

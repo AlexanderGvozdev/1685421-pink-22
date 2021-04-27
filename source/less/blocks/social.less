@@ -2,7 +2,16 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 48px);
-  gap: 10px;
+  gap: 14px;
+  padding: 0;
+  margin-top: 40px;
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+    margin-left: 12px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 37px;
+  }
 }
 .social__item {
   display: flex;
@@ -10,8 +19,8 @@
   align-items: center;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  width: 55px;
+  height: 55px;
 }
 .social__item:hover {
   border: 3px solid rgba(40, 54, 69, 1);

@@ -74,6 +74,15 @@
     line-height: 30px;
   }
 }
+.description__features br {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
 .description__phone-image-1,
 .description__phone-image-2 {
   display: none;

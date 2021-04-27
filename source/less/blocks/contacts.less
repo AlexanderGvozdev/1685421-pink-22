@@ -5,6 +5,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 33px;
     flex-basis: 50%;
+    gap: 2px;
   }
   @media (min-width: @desktop-width) {
     justify-content: space-around;
@@ -28,6 +29,9 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 .contacts__phone,
 .contacts__mail,
@@ -38,8 +42,16 @@
   line-height: 33px;
   font-weight: 300;
   margin: 0;
+  @media (min-width: @desktop-width) {
+    margin-top: -4px;
+  }
 }
 .contacts__mail:hover {
   color: #283645;
   text-decoration: underline;
+}
+.contacts__mail {
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
 }
