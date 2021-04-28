@@ -84,8 +84,12 @@
   position: absolute;
   border: none;
   background-color: transparent;
-  left: -6px;
+  left: -1px;
   top: 144px;
+  width: 22px;
+  height: 41px;
+  cursor: pointer;
+  background-image: url(../img/left-arrow.svg);
   @media (min-width: @desktop-width) {
     display: block;
   }
@@ -95,9 +99,21 @@
   position: absolute;
   border: none;
   background-color: transparent;
-  right: -6px;
+  right: -1px;
   top: 144px;
+  width: 22px;
+  height: 41px;
+  cursor: pointer;
+  background-image: url(../img/right-arrow.svg);
   @media (min-width: @desktop-width) {
     display: block;
   }
+}
+.reviews__button-right,
+.reviews__button-left {
+  opacity: 0.3;
+}
+.reviews__button-right:hover,
+.reviews__button-left:hover {
+  opacity: 0.6;
 }
