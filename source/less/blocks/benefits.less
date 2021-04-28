@@ -28,13 +28,16 @@
   }
 }
 .benefits-table {
-  position: absolute;
-  left: -260px;
   border-collapse: collapse;
   border-spacing: 2px;
+  width: 835px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
   @media (min-width: @tablet-width) {
-    position: static;
     margin-top: -6px;
+    width: 100%;
   }
 }
 .benefits-table__title,
@@ -191,7 +194,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 326px 0 67px 13px;
+  margin: 46px 0 67px 13px;
   @media (min-width: @tablet-width) {
     display: none;
   }
