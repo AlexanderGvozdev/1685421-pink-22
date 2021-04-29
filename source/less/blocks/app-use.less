@@ -12,8 +12,16 @@
 .app-use__container {
   display: none;
   @media (min-width: @tablet-width) {
+    margin-top: 44px;
+    margin-left: -16px;
     display: flex;
     justify-content: center;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    padding-top: 50px;
+    margin-left: 0;
+    padding-bottom: 66px;
   }
 }
 .app-use__title {
@@ -25,9 +33,15 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  margin-top: 11px;
+  margin-bottom: 10px;
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin-top: 23px;
+    margin-bottom: 29px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 .app-use__link {
@@ -38,5 +52,17 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+.app-use__list {
+  margin-top: 42px;
+  margin-left: 71px;
+  @media (min-width: @desktop-width) {
+    margin-top: 92px;
+  }
+}
+.app-use__list br {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

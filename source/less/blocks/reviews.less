@@ -1,6 +1,9 @@
 .reviews {
   text-align: center;
-  min-height: 405px;
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+  }
+
 }
 .reviews__image {
   display: none;
@@ -9,7 +12,10 @@
   }
 }
 .reviews__author-info {
-  padding-top: 150px;
+  margin-top: 21px;
+  @media (min-width: @desktop-width) {
+    margin-top: -56px;
+  }
 }
 .reviews__author-name{
   font-size: 18px;
@@ -18,9 +24,11 @@
   font-style: normal;
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    margin-top: 17px;
   }
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    margin-bottom: 4px;
   }
 }
 .reviews__about-author {
@@ -43,27 +51,45 @@
     font-size: 18px;
   }
 }
+.reviews__text br {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
 .reviews__toggles {
+  margin-top: 22px;
+  margin-left: 15px;
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 .reviews__wrapper {
   @media (min-width: @tablet-width) {
+    margin-top: 83px;
     display: flex;
     flex-direction: column-reverse;
   }
 }
 .reviews__item {
   position: relative;
+  margin: 0;
 }
 .reviews__button-left {
   display: none;
   position: absolute;
   border: none;
   background-color: transparent;
-  left: -30px;
-  top: 50px;
+  left: -1px;
+  top: 144px;
+  width: 22px;
+  height: 41px;
+  cursor: pointer;
+  background-image: url(../img/left-arrow.svg);
   @media (min-width: @desktop-width) {
     display: block;
   }
@@ -73,9 +99,21 @@
   position: absolute;
   border: none;
   background-color: transparent;
-  right: -30px;
-  top: 50px;
+  right: -1px;
+  top: 144px;
+  width: 22px;
+  height: 41px;
+  cursor: pointer;
+  background-image: url(../img/right-arrow.svg);
   @media (min-width: @desktop-width) {
     display: block;
   }
+}
+.reviews__button-right,
+.reviews__button-left {
+  opacity: 0.3;
+}
+.reviews__button-right:hover,
+.reviews__button-left:hover {
+  opacity: 0.6;
 }

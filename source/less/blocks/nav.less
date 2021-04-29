@@ -52,7 +52,7 @@
         content: "";
         width: 109px;
         height: 2px;
-        top: 59px;
+        top: 43px;
         left: -20px;
         background-color: white;
       }
@@ -64,8 +64,8 @@
         content: "";
         width: 109px;
         height: 2px;
-        top: 59px;
-        left: -4px;
+        top: 43px;
+        left: 1px;
         background-color: white;
       }
     }
@@ -73,7 +73,7 @@
 }
  .nav__toggle {
   position: absolute;
-  top: 29px;
+  top: 8px;
   right: 12px;
   z-index: 2;
   display: block;
@@ -82,6 +82,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  @media (min-width: @tablet-width) {
+    top: 29px;
+    right: 12px;
+  }
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -98,10 +102,16 @@
 }
 
 .nav--closed .nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
+  background-color: fade(#D22856, 30%);
   box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
+    0 8px 0 0 fade(#D22856, 30%),
+    0 16px 0 0 fade(#D22856, 30%);
+}
+.nav--closed .nav__toggle:hover::before {
+  background-color: fade(#D22856, 100%);
+  box-shadow:
+    0 8px 0 0 fade(#D22856, 100%),
+    0 16px 0 0 fade(#D22856, 100%);
 }
 @media (max-width: @mobile-width-only) {
   .nav--closed .nav__item {
@@ -136,7 +146,11 @@
 
     &:active::before,
     &:active::after {
-      background-color: fade(#ffffff, 30%);
+      background-color: fade(#D22856, 30%);
+    }
+    &:hover::before,
+    &:hover::after {
+      background-color: fade(#D22856, 100%);
     }
   }
 }
