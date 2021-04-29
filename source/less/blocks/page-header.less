@@ -1,25 +1,28 @@
 .page-header {
-  position: relative;
   background-color: #283645;
   background-image: url(../img/back-mobile.png);
-  background-position: 50% 324px;
-  background-size: 100% 40%;
+  background-position: 50% 260px;
+  background-size: 100% 47%;
   background-repeat: no-repeat;
   color: white;
   @media (min-resolution: 2dppx) {
     background-image: url(../img/back-mobile@2.png);
   }
   @media (min-width: @tablet-width) {
-    background-position: 50% 366px;
+    background-position: 50% 260px;
+    background-size: 100% 73%;
   }
   &--closed {
     background-color: #283645;
-    background-position: 50% 0;
-    background-size: cover;
+    background-position: 50% -2px;
+    background-size: 100% 65%;
+    @media (min-width: @tablet-width) {
+      background-position: 50% 0;
+      background-size: 100% 100%;
+    }
   }
   @media (min-width: @tablet-width) {
     background-image: url(../img/back-tablet.png);
-    background-size: cover;
     @media (min-resolution: 2dppx) {
       background-image: url(../img/back-tablet@2.png);
     }
@@ -33,7 +36,12 @@
     }
   }
 }
+.page-header-catalog,
+.page-header-form {
+  background-size: cover;
+}
 .page-header__container {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;

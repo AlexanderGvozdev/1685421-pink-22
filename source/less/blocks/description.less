@@ -40,7 +40,6 @@
   }
   @media (min-width: @desktop-width) {
     text-align: center;
-    width: 249px;
     margin-top: 30px;
   }
   &:first-child {
@@ -83,6 +82,11 @@
     display: none;
   }
 }
+.description__features span {
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
 .description__phone-image-1,
 .description__phone-image-2 {
   display: none;
@@ -122,8 +126,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 16px;
-    margin-left: 26px;
-    gap: 44px;
+    margin-left: 3px;
+    gap: 24px;
   }
 }
 .description__phone-image {
