@@ -1,6 +1,15 @@
 .page-footer {
   text-align: center;
 }
+.page-footer__logo,
+.page-footer__copyright {
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .page-footer__title {
   font-size: 24px;
   line-height: 29px;
@@ -25,7 +34,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 31px;
+  flex-direction: column;
    @media (min-width: @tablet-width) {
+     flex-direction: row;
     justify-content: space-between;
   }
   @media (min-width: @desktop-width) {
@@ -152,5 +163,17 @@
   @media (min-width: @desktop-width) {
     height: 502px;
     top: -44px;
+  }
+}
+.page-footer__map img {
+  position: absolute;
+  top: -58%;
+  left: 0;
+  z-index: 2;
+  @media (min-width: @tablet-width) {
+    top: -60%;
+  }
+  @media (min-width: @desktop-width) {
+    top: -76%;
   }
 }
