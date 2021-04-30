@@ -121,7 +121,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 12px;
-  margin-top: 72px;
+  margin-top: 66px;
   padding-bottom: 41px;
   @media (min-width: @tablet-width) {
     row-gap: 24px;
@@ -137,8 +137,13 @@
   }
 }
 .photo-editor__input-range {
-  position: relative;
+  -webkit-appearance: none;
   width: 240px;
+  height: 18px;
+  margin: 0 auto 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
   &--show {
     display: none;
     @media (min-width: @tablet-width) {
@@ -152,18 +157,53 @@
     width: 288px;
   }
 }
-.photo-editor__input-range-scale {
-  height: 2px;
-  background-color: #283645;
+
+.photo-editor__input-range::-webkit-slider-thumb:active {
+  background-color: #d22856;
 }
-.photo-editor__input-range-toggle {
-  position: absolute;
-  top: -6px;
+
+.photo-editor__input-range::-moz-range-thumb:active {
+  background-color: #d22856;
+}
+
+.photo-editor__input-range::-moz-focus-outer {
+  border: none;
+}
+
+.photo-editor__input-range::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: #000;
+}
+
+.photo-editor__input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-sizing: content-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #D22856;
-  background-color: white;
+  margin-top: -7px;
+  border: 2px solid #d22856;
   border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.photo-editor__input-range::-moz-range-track {
+  -moz-appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: #000;
+  outline: none;
+  border: none;
+}
+
+.photo-editor__input-range::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
 }
 .photo-editor__instruments {
   display: grid;
@@ -233,7 +273,7 @@
   grid-template-columns: 1fr;
   row-gap: 20px;
   @media (min-width: @tablet-width) {
-    row-gap: 71px;
+    row-gap: 53px;
   }
 }
 .photo-editor__grid-wrapper {
@@ -244,14 +284,13 @@
   }
 }
 .photo-editor__wrapper-input {
-  margin-top: 31px;
-  margin-left: 21px;
+  margin-top: 23px;
   @media (min-width: @tablet-width) {
-    margin-top: 57px;
+    margin-top: 51px;
     margin-left: -5px;
   }
   @media (min-width: @desktop-width) {
-    margin-top: 74px;
+    margin-top: 68px;
     margin-left: 88px;
   }
 }
