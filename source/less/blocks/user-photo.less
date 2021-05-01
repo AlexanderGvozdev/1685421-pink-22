@@ -3,32 +3,38 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
   gap: 20px;
+  padding-top: 25px;
   @media (min-width: @tablet-width) {
     margin-top: 50px;
     row-gap: 22px;
+    padding-top: 0;
   }
   @media (min-width: @desktop-width) {
     row-gap: 57px;
   }
 }
 .photo-section__title {
+  margin-top: 44px;
   margin-bottom: 51px;
   @media (min-width: @tablet-width) {
     margin-bottom: 78px;
+    margin-top: 90px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media (min-width: @desktop-width) {
+    width: 575px;
     margin-bottom: 90px;
+  }
+}
+.photo-section__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 .user-photo {
   background-color: #F2F2F2;
-
-  &:first-child {
-    margin-top: 25px;
-    @media (min-width: @tablet-width) {
-      margin-top: 0;
-    }
-  }
 }
 .user-photo__img {
   @media (min-width: @tablet-width) {
@@ -38,6 +44,26 @@
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 400px;
+  }
+}
+.user-photo-panorama {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-image: url(../img/panorama-ribbon.svg);
+    @media (min-width: @tablet-width) {
+      top: 56px;
+      right: 20px;
+    }
+    @media (min-width: @desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
   }
 }
 .user-photo-panorama__picture {
@@ -136,7 +162,7 @@
   margin-top: -14px;
   @media (min-width: @tablet-width) {
     margin-top: 5px;
-    margin-left: 291px;
+    margin-left: 49%;
   }
   @media (min-width: @desktop-width) {
     margin-left: 613px;
@@ -202,4 +228,6 @@
     margin-top: 24px;
   }
 }
-
+.user-photo img {
+  width: 100%;
+}

@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
   </head>
   <body class="page__body">
-      <header class="page-header page-header--closed">
+      <header class="page-header page-header--closed page-header-catalog">
         <div class="page-header-color">
           <div class="container">
             <div class="page-header__container">
@@ -76,7 +76,7 @@
     <main class="catalog-main">
       <section class="page-section photo-section">
         <div class="container">
-          <h3 class="page-section__title photo-section__title">Взгляните на фотографии, которые<br> выкладывают пользователи!<br> Видите, как не хватает ваших?</h3>
+          <h3 class="page-section__title photo-section__title"><span>Взгляните на фотографии, которые<br> выкладывают</span> пользователи! <br><span>Видите, как не хватает ваших?</span></h3>
         </div>
         <div class="page-section__wrapper">
             <div class="user-photo-panorama">
@@ -232,18 +232,9 @@
                 </div>
                 <div class="photo-editor__wrapper-input">
                   <div class="photo-editor__input-container">
-                    <div class="photo-editor__input-range">
-                      <div class="photo-editor__input-range-scale"></div>
-                      <div class="photo-editor__input-range-toggle" aria-label="Увеличить" tabindex="0" style="left: 80%;"></div>
-                    </div>
-                    <div class="photo-editor__input-range photo-editor__input-range--show">
-                      <div class="photo-editor__input-range-scale"></div>
-                      <div class="photo-editor__input-range-toggle" aria-label="Увеличить" tabindex="0" style="left: 20%;"></div>
-                    </div>
-                    <div class="photo-editor__input-range photo-editor__input-range--show">
-                      <div class="photo-editor__input-range-scale"></div>
-                      <div class="photo-editor__input-range-toggle" aria-label="Увеличить" tabindex="0" style="left: 55%;"></div>
-                    </div>
+                    <input type="range" class="photo-editor__input-range" min="0" max="100" step="1" value="82">
+                    <input type="range" class="photo-editor__input-range photo-editor__input-range--show" min="0" max="100" step="1" value="27">
+                    <input type="range" class="photo-editor__input-range photo-editor__input-range--show" min="0" max="100" step="1" value="50">
                   </div>
                 </div>
                 <div class="photo-editor__wrapper-button">

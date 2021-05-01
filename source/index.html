@@ -71,9 +71,9 @@
         <div class="container download__wrapper-position">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
          <picture>
-          <source media="(min-width: 1200px)" srcset="img/phone-desktop.png">
-          <source media="(min-width: 660px)" srcset="img/phone-tablet.png">
-          <img class="download__hand-iphone" src="img/phone.png" alt="рука с айфоном">
+          <source media="(min-width: 1200px)" srcset="img/phone-desktop.png 1x, img/phone-desktop@2.png 2x">
+          <source media="(min-width: 660px)" srcset="img/phone-tablet.png 1x, img/phone-tablet@2.png 2x">
+          <img class="download__hand-iphone" src="img/phone.png" srcset="img/phone@2.png" alt="рука с айфоном">
          </picture>
         </div>
         <div class="download__container">
@@ -97,35 +97,35 @@
 
       <section class="description">
         <div class="description__container">
-          <h3 class="page-title description__title"><span>Устали от серости мегаполиса?</span><span>Нам есть, что вам<br> предложить!</span> </h3>
+          <h3 class="page-title description__title"><span>Устали от серости мегаполиса?</span><span>Нам есть, что вам<br> предложить!</span></h3>
           <div class="container">
             <div class="description__wrapper">
               <div class="description__list">
                 <div class="description__item">
                   <b class="description__subtitle">Поднимает настроение</b>
-                  <p class="description__features">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                  <p class="description__features"><span>Приложение позволит вам </span><span>победить осеннюю хандру </span><span>и депрессию буквально в</span> несколько кликов!</p>
                 </div>
                 <div class="description__item">
                   <b class="description__subtitle">Меняет мир вокруг</b>
-                  <p class="description__features">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+                  <p class="description__features"><span>Сделайте снимок и </span><span>украсьте его смайликом </span><span>или текстовой подписью,</span> чтобы<br> усилить эффект</p>
                 </div>
                 <div class="description__item">
                   <b class="description__subtitle">Заводит<br> новых друзей</b>
-                  <p class="description__features">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                  <p class="description__features"><span>Ставьте лайки, </span><span>комментируйте, делитесь </span><span>фотографиями с друзьями </span> и заводите новых</p>
                 </div>
               </div>
               <div class="description__phone-image">
                 <picture>
-                  <source media="(min-width: 660px)" srcset="img/advantage-phone-sad.png">
-                  <img class="description__phone-image-1" src="img/advantage-phone-sad.png" alt="изображение айфона">
+                  <source media="(min-width: 660px)" srcset="img/advantage-phone-sad.png 1x, img/advantage-phone-sad-x2.png 2x">
+                  <img class="description__phone-image-1" src="img/advantage-phone-sad.png" srcset="img/advantage-phone-sad-x2.png" alt="изображение айфона">
                 </picture>
                 <picture>
-                  <source media="(min-width: 660px)" srcset="img/advantage-phone-normal.png">
-                  <img class="description__phone-image-2" src="img/advantage-phone-normal.png" alt="изображение айфона">
+                  <source media="(min-width: 660px)" srcset="img/advantage-phone-normal.png 1x, img/advantage-phone-normal-x2.png 2x">
+                  <img class="description__phone-image-2" src="img/advantage-phone-normal.png" srcset="img/advantage-phone-normal-x2.png" alt="изображение айфона">
                 </picture>
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/advantage-phone-happy.png">
-                  <source media="(min-width: 660px)" srcset="img/advantages-iphone-tablet.png">
+                  <source media="(min-width: 660px)" srcset="img/advantages-iphone-tablet.png 1x, img/advantages-iphone-tablet-x2.png 2x" >
                   <img class="description__phone-image-3" src="img/advantage-phone-happy.png" srcset="img/advantage-phone-happy-x2.png" alt="изображение айфона">
                 </picture>
               </div>
@@ -270,10 +270,11 @@
                 Конюшенная, 19/8</p>
             </div>
           </div>
-          <div class="page-footer__map">
-            <img src="img/map.png" width="320" height="200" alt="карта">
+          <div class="page-footer__map container">
+            <img src="img/triangle-map.svg" width="1200" height="33">
+            <iframe class="page-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.739605461122!2d30.32106781670872!3d59.93891514214621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619710439868!5m2!1sru!2sru" width="320" height="200"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
-          <div class="page-footer__social-wrapper">
+          <div class="page-footer__social-wrapper page-footer__social-wrapper-index">
             <a class="page-footer__logo">
               <svg class="page-footer__logo-mobile" width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="page-footer__logo-glasses">
