@@ -1,15 +1,76 @@
 .modal__error {
+  text-align: center;
   width: 320px;
-  min-height: 289px;
+  height: 289px;
+  margin: auto;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
   @media (min-width: @tablet-width) {
     width: 460px;
-    min-height: 363px;
+    height: 363px;
   }
   @media (min-width: @desktop-width) {
     width: 780px;
-    min-height: 377px;
+    height: 377px;
   }
 }
-.modal {
-  display: none;
+.modal__success {
+  text-align: center;
+  width: 320px;
+  height: 380px;
+  margin-top: 150px;
+  margin: auto;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    min-height: 432px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    height: 377px;
+  }
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 44px;
+  padding-bottom: 37px;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 215px;
+    margin: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+.modal__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 280px;
+    margin: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 380px;
+  }
+}
+.modal__success .modal__wrapper {
+  background-color: #f2f2f2;
+  margin-top: 41px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.modal__error .modal__wrapper {
+  padding-top: 15px;
+  padding-bottom: 52px;
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    padding-top: 42px;
+    padding-bottom: 56px;
+    margin-top: 50px;
+  }
 }
