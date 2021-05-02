@@ -50,12 +50,19 @@
   position: relative;
   &::before {
     position: absolute;
-    content: "";
+    content: "панорама дня";
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 6px;
     top: 0;
     right: 20px;
     width: 140px;
     height: 36px;
-    background-image: url(../img/panorama-ribbon.svg);
+    background-color: #D22856;
     @media (min-width: @tablet-width) {
       top: 56px;
       right: 20px;
@@ -140,6 +147,7 @@
 .user-photo__button-like {
   margin-left: 11px;
   margin-top: -19px;
+  cursor: pointer;
   @media (min-width: @tablet-width) {
     margin-top: -19px;
     margin-right: 25px;
