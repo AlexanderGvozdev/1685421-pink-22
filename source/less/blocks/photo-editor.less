@@ -55,6 +55,7 @@
   border-radius: 30px;
   width: 280px;
   height: 55px;
+  cursor: pointer;
   @media (min-width: @tablet-width) {
     width: 260px;
   }
@@ -79,6 +80,7 @@
   border-radius: 30px;
   width: 280px;
   height: 55px;
+  cursor: pointer;
   @media (min-width: @tablet-width) {
     width: 260px;
   }
@@ -256,11 +258,18 @@
     }
   }
 }
+.photo-editor__instruments-item path{
+  fill: #283645;
+}
 .photo-editor__instruments-item {
+  cursor: pointer;
   opacity: 0.3;
 }
+.photo-editor__instruments-item:hover path {
+  fill: #283645;
+}
 .photo-editor__instruments-item:hover {
-  opacity: 0,5;
+  opacity: 0.5;
 }
 .photo-editor__instruments-item:active path {
   fill: #D22856;
