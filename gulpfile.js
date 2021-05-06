@@ -15,7 +15,7 @@ const sync = require("browser-sync").create();
 
 // Styles
 
-const styles = () => {
+const stylesmin = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -30,6 +30,18 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
+const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(rename("style.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.stylesmin = stylesmin;
 exports.styles = styles;
 
 // HTML
@@ -145,6 +157,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/less/**/*.less", gulp.series(stylesmin));
   gulp.watch("source/js/main.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
@@ -157,6 +170,7 @@ const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    stylesmin,
     html,
     scripts,
     sprite,
@@ -175,6 +189,7 @@ exports.default = gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    stylesmin,
     html,
     scripts,
     sprite,
