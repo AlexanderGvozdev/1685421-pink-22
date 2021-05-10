@@ -2,32 +2,38 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 50% -23px;
-  background-image: url(../img/background-benefits-mobile.svg);
+  background-image: url("../img/background-benefits-mobile.svg");
   position: relative;
   overflow: hidden;
   margin-top: 32px;
+
   @media (min-width: @tablet-width) {
     background-position: 50% -7px;
-    background-image: url(../img/background-benefits.svg);
+    background-image: url("../img/background-benefits.svg");
     margin-top: 4px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 32px;
     background-position: 50% 0;
-    background-image: url(../img/background-benefits-desktop.svg);
+    background-image: url("../img/background-benefits-desktop.svg");
   }
 }
+
 .benefits__wrapper {
   padding-top: 100px;
+
   @media (min-width: @tablet-width) {
     padding-bottom: 66px;
     padding-top: 110px;
   }
+
   @media (min-width: @desktop-width) {
     padding-top: 158px;
     padding-bottom: 100px;
   }
 }
+
 .benefits-table {
   border-collapse: collapse;
   border-spacing: 2px;
@@ -36,16 +42,18 @@
   left: 50%;
   transform: translateX(-50%);
   transition: left 0.4s linear;
+
   @media (min-width: @tablet-width) {
     margin-top: -6px;
     width: 100%;
   }
 }
+
 .benefits-table__title,
 .benefits-table__cell {
   min-width: 280px;
   line-height: 30px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 2px;
   text-transform: uppercase;
 
@@ -150,6 +158,7 @@
   line-height: 30px;
   display: block;
   position: relative;
+
   @media (min-width: @desktop-width) {
     margin-top: 6px;
   }
@@ -185,6 +194,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -196,6 +206,7 @@
   justify-content: center;
   align-items: center;
   margin: 46px 0 67px 13px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

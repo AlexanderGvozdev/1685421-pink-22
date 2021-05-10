@@ -4,9 +4,15 @@
   gap: 35px;
   z-index: 6;
   margin-top: 35px;
+
   @media (min-width: @tablet-width) {
     margin-top: -3px;
-    margin-left: -2px;
+    margin-left: 66px;
+    gap: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 68px;
   }
 }
 
@@ -14,34 +20,42 @@
   &--apple {
     margin-top: -3px;
     margin-left: -18px;
+
     @media (min-width: @tablet-width) {
       margin-top: 48px;
       margin-left: -120px;
     }
+
     @media (min-width: @desktop-width) {
       margin-top: 70px;
       margin-left: -120px;
     }
   }
+
   &--android {
     margin-top: 3px;
     margin-left: -54px;
+
     @media (min-width: @tablet-width) {
       margin-top: 54px;
       margin-left: -159px;
     }
+
     @media (min-width: @desktop-width) {
       margin-top: 79px;
       margin-left: -159px;
     }
   }
+
   &--microsoft {
     margin-top: 9px;
     margin-left: -97px;
+
     @media (min-width: @tablet-width) {
       margin-top: 56px;
       margin-left: -197px;
     }
+
     @media (min-width: @desktop-width) {
       margin-top: 83px;
       margin-left: -197px;

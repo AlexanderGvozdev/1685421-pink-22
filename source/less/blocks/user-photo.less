@@ -1,18 +1,22 @@
 .user-photo {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
+
 .user-photo__img {
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
   }
+
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 400px;
   }
 }
+
 .user-photo-panorama {
   position: relative;
+
   &::before {
     position: absolute;
     content: "панорама дня";
@@ -27,37 +31,44 @@
     right: 20px;
     width: 140px;
     height: 36px;
-    background-color: #D22856;
+    background-color: #d22856;
+
     @media (min-width: @tablet-width) {
       top: 56px;
       right: 20px;
     }
+
     @media (min-width: @desktop-width) {
       top: 54px;
       right: 130px;
     }
   }
 }
+
 .user-photo-panorama__picture {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-height: 509px;
 }
+
 .user-photo__author,
 .user-photo-panorama__author {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
 }
+
 .user-photo__author {
   margin-top: 10px;
   margin-left: 17px;
   margin-bottom: -14px;
 }
+
 .user-photo-panorama__author {
   margin-bottom: -15px;
 }
+
 .user-photo__time,
 .user-photo-panorama__time {
   font-size: 12px;
@@ -65,102 +76,125 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+
 .user-photo__author-desc,
 .user-photo-panorama__author-desc {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 }
+
 .user-photo__author-desc {
   margin-left: 17px;
   margin-bottom: 15px;
+
   @media (min-width: @tablet-width) {
     margin-left: 17px;
     margin-bottom: 15px;
   }
 }
+
 .user-photo-panorama__author-desc {
   @media (min-width: @tablet-width) {
     margin-top: -14px;
   }
 }
+
 .user-photo-panorama__author-desc br {
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
+
 .user-photo__like,
 .user-photo-panorama__like {
-  color: #D22856;
+  color: #d22856;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
+
 .user-photo__like {
   margin-left: 12px;
   margin-top: -3px;
+
   @media (min-width: @tablet-width) {
     margin-top: -3px;
     margin-left: 15px;
   }
 }
+
 .user-photo__button-like,
 .user-photo-panorama__button-like {
   border: none;
 }
+
 .user-photo__button-like {
   margin-left: 11px;
   margin-top: -14px;
   cursor: pointer;
+
   @media (min-width: @tablet-width) {
     margin-top: -14px;
     margin-right: 25px;
   }
 }
+
 .user-photo__container,
 .user-photo-panorama__container {
   display: flex;
   flex-direction: row;
+
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
+
 .user-photo__container {
   padding-bottom: 6px;
 }
+
 .user-photo-panorama__container {
   margin-left: -6px;
   margin-top: -14px;
+
   @media (min-width: @tablet-width) {
     margin-top: 5px;
     margin-left: 49%;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 613px;
   }
 }
+
 .user-photo-panorama__like {
   margin-left: 12px;
+
   @media (min-width: @tablet-width) {
     margin-right: 10px;
   }
 }
+
 .user-photo__container button,
 .user-photo-panorama__container button {
   order: 0;
 }
+
 .user-photo__container p,
 .user-photo-panorama__container p {
   order: 2;
 }
+
 .user-photo-panorama__flex {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   padding-left: 17px;
   padding-top: 5px;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -168,31 +202,38 @@
     padding-top: 8px;
     padding-bottom: 10px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 27px;
   }
 }
+
 .user-photo-panorama__flex .user-photo-panorama__author-desc {
   @media (min-width: @tablet-width) {
     order: 2;
   }
 }
+
 .user-photo-panorama__flex div {
   @media (min-width: @tablet-width) {
     order: 0;
   }
 }
+
 .user-photo__desc-container {
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     margin-left: 14px;
     margin-top: 8px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 11px;
   }
 }
+
 .user-photo__desc-container-2 .user-photo__container,
 .user-photo__desc-container-4 .user-photo__container,
 .user-photo__desc-container-5 .user-photo__container,
@@ -201,6 +242,7 @@
     margin-top: 24px;
   }
 }
+
 .user-photo img {
   width: 100%;
 }
