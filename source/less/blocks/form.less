@@ -305,6 +305,11 @@
   }
 }
 
+.form__input--radio:focus + label::before {
+  border: 2px solid #d22856;
+  border-radius: 50%;
+}
+
 .form__input--radio + label {
   position: relative;
 }
@@ -346,6 +351,10 @@
   @media (min-width: @tablet-width) {
     left: -47px;
   }
+}
+
+.form__input--checkbox:focus + label::before {
+  border: 2px solid #d22856;
 }
 
 .form__input--checkbox + label {
