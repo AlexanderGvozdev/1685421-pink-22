@@ -81,11 +81,11 @@
 .form__fieldset-2 {
   @media (min-width: @tablet-width) {
     margin-top: 53px;
-    padding-bottom: 52px;
+    padding-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 57px;
+    padding-bottom: 0;
   }
 }
 
@@ -112,6 +112,10 @@
   @media (min-width: @tablet-width) {
     margin-top: 54px;
     padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 46px;
   }
 }
 
@@ -483,7 +487,7 @@
   background-color: #f2f2f2;
   margin: 0 -20px;
   margin-top: 44px;
-  padding-bottom: 38px;
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     background-color: initial;
@@ -507,28 +511,50 @@
 }
 
 .form__input-list {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-  padding-top: 37px;
-  padding-left: 25px;
+  padding-top: 23px;
+  padding-left: 65px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 64px;
+    padding-left: 104px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    gap: 75px;
-    padding-top: 35px;
+    display: grid;
+    grid-template-areas: "form__input-item-1 form__input-item-3 form__input-item-5"
+      "form__input-item-2 form__input-item-4 form__input-item-6";
+    padding-top: 20px;
+    column-gap: 65px;
   }
 }
 
 .form__input-item {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
   margin: 0;
+  margin-bottom: 52px;
+}
+
+.form__input-item-1 {
+  grid-area: form__input-item-1;
+}
+
+.form__input-item-2 {
+  grid-area: form__input-item-2;
+}
+
+.form__input-item-3 {
+  grid-area: form__input-item-3;
+}
+
+.form__input-item-4 {
+  grid-area: form__input-item-4;
+}
+
+.form__input-item-5 {
+  grid-area: form__input-item-5;
+}
+
+.form__input-item-6 {
+  grid-area: form__input-item-6;
+  margin-bottom: 0;
 }
 
 .form__fieldset-3 label {
