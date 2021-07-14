@@ -520,10 +520,9 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-areas: "form__input-item-1 form__input-item-3 form__input-item-5"
-      "form__input-item-2 form__input-item-4 form__input-item-6";
+    grid-template-columns: repeat(3, auto);
     padding-top: 20px;
-    column-gap: 65px;
+    column-gap: 68px;
   }
 }
 
@@ -533,28 +532,42 @@
 }
 
 .form__input-item-1 {
-  grid-area: form__input-item-1;
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
 }
 
 .form__input-item-2 {
-  grid-area: form__input-item-2;
+  @media (min-width: @desktop-width) {
+    order: 4;
+  }
 }
 
 .form__input-item-3 {
-  grid-area: form__input-item-3;
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
 }
 
 .form__input-item-4 {
-  grid-area: form__input-item-4;
+  @media (min-width: @desktop-width) {
+    order: 5;
+  }
 }
 
 .form__input-item-5 {
-  grid-area: form__input-item-5;
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
 }
 
 .form__input-item-6 {
-  grid-area: form__input-item-6;
   margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+    order: 6;
+  }
 }
 
 .form__fieldset-3 label {
